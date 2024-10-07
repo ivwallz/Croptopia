@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.epherical.croptopia.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "croptopia.refmap.json",
+  "mixins": [
+    "AgeInvokerMixin",
+    "ItemMixin",
+    "LootPoolAccessor",
+    "LootPoolBuilderAccessor",
+    "LootTableAccessor"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
