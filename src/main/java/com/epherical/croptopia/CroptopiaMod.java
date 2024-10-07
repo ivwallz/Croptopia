@@ -11,6 +11,7 @@ import com.epherical.croptopia.config.TreeConfiguration;
 import com.epherical.croptopia.datagen.CroptopiaBiomeTagProvider;
 import com.epherical.croptopia.datagen.CroptopiaBlockTagProvider;
 import com.epherical.croptopia.datagen.CroptopiaItemModelProvider;
+import com.epherical.croptopia.datagen.CroptopiaItemTagProvider;
 import com.epherical.croptopia.datagen.CroptopiaRecipeProvider;
 import com.epherical.croptopia.datagen.CroptopiaWorldBiomeSelection;
 import com.epherical.croptopia.datagen.CroptopiaWorldGeneration;
@@ -185,7 +186,8 @@ public class CroptopiaMod {
             generator.addProvider(event.includeClient(),
                     new CroptopiaItemModelProvider(output, helper));
 
-
+            generator.addProvider(event.includeServer(),
+                    new CroptopiaItemTagProvider(output, Registries.ITEM, lookupProvider, helper));
             generator.addProvider(event.includeServer(),
                     new DatapackBuiltinEntriesProvider(output, lookupProvider, builder, Set.of(MODID)));
             generator.addProvider(event.includeServer(),

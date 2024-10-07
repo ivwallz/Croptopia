@@ -150,10 +150,10 @@ public class CroptopiaRecipeProvider extends RecipeProvider {
     protected void offerFoodCookingRecipe(RecipeOutput exporter, ItemLike input, String inputName, ItemLike output, int time, float exp, boolean campFire) {
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(input), RecipeCategory.FOOD, output, exp, time)
                 .unlockedBy("has_" + inputName, RecipeProvider.has(input))
-                .save(exporter, RecipeProvider.getItemName(output) + "_from_" + inputName);
+                .save(exporter, "croptopia:" + RecipeProvider.getItemName(output) + "_from_" + inputName);
         SimpleCookingRecipeBuilder.smoking(Ingredient.of(input), RecipeCategory.FOOD, output, exp, time / 2)
                 .unlockedBy("has_" + inputName, RecipeProvider.has(input))
-                .save(exporter, RecipeProvider.getItemName(output) + "_from_smoking_" + inputName);
+                .save(exporter, "croptopia:" + RecipeProvider.getItemName(output) + "_from_smoking_" + inputName);
         // TODO campfire
     }
 
@@ -225,7 +225,7 @@ public class CroptopiaRecipeProvider extends RecipeProvider {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.DEAD_BUSH)
                 .requires(saltTag).requires(ItemTags.SAPLINGS)
                 .unlockedBy("has_salts", RecipeProvider.has(saltTag))
-                .save(exporter);
+                .save(exporter, "croptopia:" + RecipeProvider.getItemName(Items.DEAD_BUSH));
         TagKey<Item> kumquatTag = independentTag(Content.KUMQUAT.getPlural());
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Content.CANDIED_KUMQUATS, 7)
                 .requires(kumquatTag)
@@ -245,14 +245,14 @@ public class CroptopiaRecipeProvider extends RecipeProvider {
                 .requires(turmericTag)
                 .requires(turmericTag)
                 .unlockedBy("has_turmeric", RecipeProvider.has(Content.TURMERIC))
-                .save(exporter);
+                .save(exporter, "croptopia:" + RecipeProvider.getItemName(Items.ORANGE_DYE));
         TagKey<Item> grapeTag = independentTag(Content.GRAPE.getPlural());
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.PURPLE_DYE, 2)
                 .requires(grapeTag)
                 .requires(grapeTag)
                 .requires(grapeTag)
                 .unlockedBy("has_grape", RecipeProvider.has(Content.GRAPE))
-                .save(exporter);
+                .save(exporter, "croptopia:" + RecipeProvider.getItemName(Items.PURPLE_DYE));
     }
 
     protected void generateMiscShaped(RecipeOutput exporter) {

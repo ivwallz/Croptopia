@@ -1,11 +1,30 @@
 package com.epherical.croptopia.datagen;
 
 
+import com.epherical.croptopia.CroptopiaMod;
+import com.epherical.croptopia.register.Content;
+import com.epherical.croptopia.register.helpers.Tree;
+import com.epherical.croptopia.register.helpers.TreeCrop;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.core.Registry;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.tags.IntrinsicHolderTagsProvider;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import org.jetbrains.annotations.Nullable;
+
 import java.util.concurrent.CompletableFuture;
 
-/*public class CroptopiaItemTagProvider extends FabricTagProvider.ItemTagProvider {
-    public CroptopiaItemTagProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> completableFuture) {
-        super(output, completableFuture);
+import static com.epherical.croptopia.CroptopiaMod.MODID;
+
+public class CroptopiaItemTagProvider extends IntrinsicHolderTagsProvider<Item> {
+
+    public CroptopiaItemTagProvider(PackOutput output, ResourceKey<? extends Registry<Item>> registryKey,
+                                    CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
+        super(output, registryKey, lookupProvider, item -> item.builtInRegistryHolder().key(), MODID, existingFileHelper);
     }
 
 
@@ -21,15 +40,15 @@ import java.util.concurrent.CompletableFuture;
     }
 
     protected void generateSeedsEatenByTag(TagKey<Item> key) {
-        FabricTagBuilder animalFood = getOrCreateTagBuilder(key);
+        IntrinsicTagAppender<Item> tag = tag(key);
         for (Item seed : CroptopiaMod.seeds) {
-            animalFood.add(seed);
+            tag.add(seed);
         }
     }
 
 
     protected void generateSaplings() {
-        FabricTagBuilder saplings = getOrCreateTagBuilder(ItemTags.SAPLINGS);
+        IntrinsicTagAppender<Item> saplings = tag(ItemTags.SAPLINGS);
         for (TreeCrop crop : TreeCrop.copy()) {
             saplings.add(crop.getSaplingItem());
         }
@@ -39,22 +58,21 @@ import java.util.concurrent.CompletableFuture;
     }
 
     protected void generateBarkLogs() {
-        FabricTagBuilder burnableLog = getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN);
+        IntrinsicTagAppender<Item> burnableLog = tag(ItemTags.LOGS_THAT_BURN);
         for (Tree crop : Tree.copy()) {
             // add different log types to log tag of this crop
             tag(crop.getLogItemTag())
-                    .add()
-                    .add(reverseLookup(crop.getLog().asItem()))
-                    .add(reverseLookup(crop.getStrippedLog().asItem()))
-                    .add(reverseLookup(crop.getWood().asItem()))
-                    .add(reverseLookup(crop.getStrippedWood().asItem()));
+                    .add((crop.getLog().asItem()))
+                    .add((crop.getStrippedLog().asItem()))
+                    .add((crop.getWood().asItem()))
+                    .add((crop.getStrippedWood().asItem()));
             // make this crop log burnable
             burnableLog.addTag(crop.getLogItemTag());
         }
     }
 
     protected void generateLeaves() {
-        FabricTagBuilder leaves = getOrCreateTagBuilder(ItemTags.LEAVES);
+        IntrinsicTagAppender<Item> leaves = tag(ItemTags.LEAVES);
         for (TreeCrop crop : TreeCrop.copy()) {
             leaves.add(crop.getLeaves().asItem());
         }
@@ -64,12 +82,12 @@ import java.util.concurrent.CompletableFuture;
     }
 
     protected void generateMisc() {
-        FabricTagBuilder crops = getOrCreateTagBuilder(ItemTags.VILLAGER_PLANTABLE_SEEDS);
+        IntrinsicTagAppender<Item> crops = tag(ItemTags.VILLAGER_PLANTABLE_SEEDS);
         for (Item seed : CroptopiaMod.seeds) {
             crops.add(seed);
         }
         // explicitly used as dolphin food in vanilla
-        FabricTagBuilder fishes = getOrCreateTagBuilder(ItemTags.FISHES);
+        IntrinsicTagAppender<Item> fishes = tag(ItemTags.FISHES);
         fishes.add(Content.ANCHOVY.asItem());
         fishes.add(Content.CALAMARI.asItem());
         fishes.add(Content.GLOWING_CALAMARI.asItem());
@@ -80,7 +98,7 @@ import java.util.concurrent.CompletableFuture;
         fishes.add(Content.SHRIMP.asItem());
         fishes.add(Content.TUNA.asItem());
         // fox food: all berries added by croptopia
-        FabricTagBuilder foxFood = getOrCreateTagBuilder(ItemTags.FOX_FOOD);
+        IntrinsicTagAppender<Item> foxFood = tag(ItemTags.FOX_FOOD);
         foxFood.add(Content.BLACKBERRY.asItem());
         foxFood.add(Content.BLUEBERRY.asItem());
         foxFood.add(Content.CRANBERRY.asItem());
@@ -88,7 +106,7 @@ import java.util.concurrent.CompletableFuture;
         foxFood.add(Content.RASPBERRY.asItem());
         foxFood.add(Content.STRAWBERRY.asItem());
         // piglin food: more cannibalism (which already happens in vanilla)
-        FabricTagBuilder piglinFood = getOrCreateTagBuilder(ItemTags.PIGLIN_FOOD);
+        IntrinsicTagAppender<Item> piglinFood = tag(ItemTags.PIGLIN_FOOD);
         piglinFood.add(Content.HAM_SANDWICH);
         piglinFood.add(Content.PEPPERONI);
         piglinFood.add(Content.PORK_AND_BEANS);
@@ -97,4 +115,4 @@ import java.util.concurrent.CompletableFuture;
         piglinFood.add(Content.COOKED_BACON.asItem());
     }
 
-}*/
+}
