@@ -1,0 +1,39 @@
+{
+  "values": [
+    "minecraft:flower_forest",
+    "minecraft:windswept_forest",
+    "minecraft:forest",
+    {
+      "id": "minecraft:flower_forest",
+      "required": false
+    },
+    {
+      "id": "byg:autumnal_forest",
+      "required": false
+    },
+    {
+      "id": "byg:aspen_forest",
+      "required": false
+    },
+    {
+      "id": "byg:jacaranda_forest",
+      "required": false
+    },
+    {
+      "id": "byg:autumnal_taiga",
+      "required": false
+    },
+    {
+      "id": "minecraft:windswept_forest",
+      "required": false
+    },
+    {
+      "id": "byg:red_oak_forest",
+      "required": false
+    },
+    {
+      "id": "byg:orchard",
+      "required": false
+    }
+  ]
+}

@@ -22,6 +22,11 @@ import com.epherical.croptopia.register.helpers.FarmlandCrop;
 import com.epherical.croptopia.register.helpers.TreeCrop;
 import com.epherical.croptopia.register.helpers.Utensil;
 import com.epherical.epherolib.libs.org.spongepowered.configurate.hocon.HoconConfigurationLoader;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 import com.mojang.logging.LogUtils;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.client.Minecraft;
@@ -75,6 +80,11 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.neoforged.neoforge.registries.RegisterEvent;
 import org.slf4j.Logger;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
@@ -173,6 +183,11 @@ public class CroptopiaMod {
     public static class DataHandler {
         @SubscribeEvent
         public static void gatherData(GatherDataEvent event) {
+
+            config.addSerializer(TreeConfiguration.class, TreeConfiguration.Serializer.INSTANCE);
+            config.addSerializer(ResourceLocation.class, IdentifierSerializer.INSTANCE);
+            config.loadConfig(MiscNames.MOD_ID);
+
             RegistrySetBuilder builder = new RegistrySetBuilder();
             builder.add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, CroptopiaWorldBiomeSelection::new);
             CroptopiaWorldGeneration generation = new CroptopiaWorldGeneration();

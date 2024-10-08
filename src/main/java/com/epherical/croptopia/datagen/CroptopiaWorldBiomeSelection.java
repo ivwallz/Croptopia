@@ -19,7 +19,7 @@ import static com.epherical.croptopia.common.Tags.*;
 import static com.epherical.croptopia.common.generator.PlacedFeatureKeys.*;
 
 public class CroptopiaWorldBiomeSelection {
-    public static final ResourceKey<BiomeModifier> ADD_ALMOND_TREE_TO_BIOMES = createKey("add_almond_to_biome");
+    public static final ResourceKey<BiomeModifier> ADD_ALMOND_TREE_TO_BIOMES = createKey("add_almond_tree_to_biome");
     public static final ResourceKey<BiomeModifier> ADD_APPLE_TREE_TO_BIOMES = createKey("add_apple_tree_to_biomes");
     public static final ResourceKey<BiomeModifier> ADD_APRICOT_TREE_TO_BIOMES = createKey("add_apricot_tree_to_biomes");
     public static final ResourceKey<BiomeModifier> ADD_AVOCADO_TREE_TO_BIOMES = createKey("add_avocado_tree_to_biomes");
