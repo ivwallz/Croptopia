@@ -10,6 +10,7 @@ import com.epherical.croptopia.config.IdentifierSerializer;
 import com.epherical.croptopia.config.TreeConfiguration;
 import com.epherical.croptopia.datagen.CroptopiaBiomeTagProvider;
 import com.epherical.croptopia.datagen.CroptopiaBlockTagProvider;
+import com.epherical.croptopia.datagen.CroptopiaIndependentItemTagProvider;
 import com.epherical.croptopia.datagen.CroptopiaItemModelProvider;
 import com.epherical.croptopia.datagen.CroptopiaItemTagProvider;
 import com.epherical.croptopia.datagen.CroptopiaRecipeProvider;
@@ -22,11 +23,6 @@ import com.epherical.croptopia.register.helpers.FarmlandCrop;
 import com.epherical.croptopia.register.helpers.TreeCrop;
 import com.epherical.croptopia.register.helpers.Utensil;
 import com.epherical.epherolib.libs.org.spongepowered.configurate.hocon.HoconConfigurationLoader;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
 import com.mojang.logging.LogUtils;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.client.Minecraft;
@@ -35,7 +31,6 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.core.HolderSet;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.DataGenerator;
@@ -71,7 +66,6 @@ import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.common.loot.IGlobalLootModifier;
 import net.neoforged.neoforge.common.world.BiomeModifier;
-import net.neoforged.neoforge.common.world.BiomeModifiers;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -80,11 +74,6 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.neoforged.neoforge.registries.RegisterEvent;
 import org.slf4j.Logger;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
@@ -198,10 +187,11 @@ public class CroptopiaMod {
             ExistingFileHelper helper = event.getExistingFileHelper();
             CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
+
             generator.addProvider(event.includeClient(),
                     new CroptopiaItemModelProvider(output, helper));
 
-            generator.addProvider(event.includeServer(),
+            CroptopiaItemTagProvider itemProvider = generator.addProvider(event.includeServer(),
                     new CroptopiaItemTagProvider(output, Registries.ITEM, lookupProvider, helper));
             generator.addProvider(event.includeServer(),
                     new DatapackBuiltinEntriesProvider(output, lookupProvider, builder, Set.of(MODID)));
@@ -209,8 +199,11 @@ public class CroptopiaMod {
                     new CroptopiaRecipeProvider(output, lookupProvider));
             generator.addProvider(event.includeServer(),
                     new CroptopiaBiomeTagProvider(output, lookupProvider, helper));
-            generator.addProvider(event.includeServer(),
+            CroptopiaBlockTagProvider blockProvider = generator.addProvider(event.includeServer(),
                     new CroptopiaBlockTagProvider(output, Registries.BLOCK, lookupProvider, helper));
+            CroptopiaIndependentItemTagProvider provider = new CroptopiaIndependentItemTagProvider(output, lookupProvider, itemProvider.contentsGetter(), blockProvider.contentsGetter(), helper);
+            generator.addProvider(event.includeServer(), provider);
+
         }
     }
 
