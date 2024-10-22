@@ -280,13 +280,12 @@ public class CroptopiaIndependentItemTagProvider extends ItemTagsProvider {
         String path = (item).builtInRegistryHolder().key().location().getPath();
         TagKey<Item> forgeFriendlyTag = register(category + "/" + path);
         ResourceLocation independentEntry = independentTag(category + "/" + path);
-        this.tag(forgeFriendlyTag).add((item));
+        this.tag(forgeFriendlyTag).add(item); // 1. this is ... "c":vegetables/artichoke if represented in the file, otherwise c/vegetables/artichoke.json
 
-        // this is the group i.e vegetables.json encompassing all the vegetables in the mod. it should pull from zucchini.json and not vegetables/zucchini.json
-        /*IntrinsicTagAppender<Item> tag = this.tag(register(category));
-        // we need a new independentEntry
+        this.tag(register(name)).add(item).add(TagEntry.tag(independentEntry)); // 2. this is ... "c": croptopia:artichoke or // c/artichokes.json
+
         ResourceLocation entryForGroup = independentTag(name);
-        tag.add(TagEntry.tag(entryForGroup));*/
+        this.tag(register(category)).add(TagEntry.tag(entryForGroup));
     }
 
     private IntrinsicTagAppender<Item> createGeneralTag(String name, Item item) {
@@ -316,7 +315,7 @@ public class CroptopiaIndependentItemTagProvider extends ItemTagsProvider {
         ResourceLocation independentEntry = independentTag(category + "/" + name);
 
         this.tag(forgeFriendlyTag).add((item));
-        this.tag(register(category)).add(TagEntry.tag(independentEntry));
+        this.tag(register(name)).add(item).add(TagEntry.tag(independentEntry)); // 2. this is ... "c": croptopia:artichoke or // c/artichokes.json
         this.tag(register(pluralSeedName)).add((item)).add(TagEntry.tag(independentEntry));
     }
 
