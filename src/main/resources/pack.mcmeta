@@ -1,7 +1,6 @@
 {
   "pack": {
     "description": "Croptopia Resources and Data",
-    "pack_format": 48,
-    "_comment": "Croptopia Datapack"
+    "pack_format": 48
   }
 }
