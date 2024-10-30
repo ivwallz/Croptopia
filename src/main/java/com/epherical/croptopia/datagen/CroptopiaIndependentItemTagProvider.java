@@ -315,6 +315,7 @@ public class CroptopiaIndependentItemTagProvider extends ItemTagsProvider {
         ResourceLocation independentEntry = independentTag(category + "/" + name);
 
         this.tag(forgeFriendlyTag).add((item));
+        this.tag(register(category)).add(TagEntry.tag(independentEntry));
         this.tag(register(name)).add(item).add(TagEntry.tag(independentEntry)); // 2. this is ... "c": croptopia:artichoke or // c/artichokes.json
         this.tag(register(pluralSeedName)).add((item)).add(TagEntry.tag(independentEntry));
     }

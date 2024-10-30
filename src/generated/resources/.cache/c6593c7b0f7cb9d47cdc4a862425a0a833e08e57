@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-30T18:32:27.0308751	Croptopia Independent Tags
+// 1.21.1	2024-10-30T18:43:38.3618196	Croptopia Independent Tags
 d5d511b3d7d6049c372d47ab52aac9e52d48d0d8 data/c/tags/item/almond.json
 f454e50d496ac4bf6c316fc997c1472ee59e0110 data/c/tags/item/almonds.json
 ded9bb7cd733eb505b138baa2746638bb8c5d0b9 data/c/tags/item/almond_brittles.json
@@ -491,6 +491,7 @@ f2fd8a31769af6a7ce0ee8dd161fdb3a15ec77c5 data/c/tags/item/saguaros.json
 a79503956a3064ce7b1a94aec00534a3d7bc5d34 data/c/tags/item/saguaro_seeds.json
 3940b2be16b8ca6babaab1fd1963eec4091ae01f data/c/tags/item/salsas.json
 e5e7c17efaeaaa402c4705dadc0aad43e10b6ccf data/c/tags/item/salt_ores.json
+9f7a22ed482b05b590f9366d95a524452dd66441 data/c/tags/item/saplings.json
 0ffaa32a4a695a58d44a13cc1e68bf3dbbc21236 data/c/tags/item/saplings/almond.json
 a0242a67a797a1c669ce86c208f9a02d75e8b2e7 data/c/tags/item/saplings/apple.json
 429388975131e468aa590def9b8bc35e80c6727c data/c/tags/item/saplings/apricot.json
@@ -523,6 +524,7 @@ c53ba2a0c7307be9f38c5aed94eaf56c350fc0fd data/c/tags/item/saplings/orange.json
 9fcdf543249e374f4656606e93193044e7755fdc data/c/tags/item/scones.json
 d96b406347cef770e9aa454ff7228a4f4187cff6 data/c/tags/item/scrambled_eggs.json
 7ec376f8e7c46dd53f5f1acde1240c2cd7e4fd1b data/c/tags/item/sea_lettuce.json
+d87df8d3b7e7a4ffa19a6a9d00da43237f7b550f data/c/tags/item/seeds.json
 c1bf231e5d838dd4bd162c4c96f4e4d433f07a8a data/c/tags/item/seeds/artichoke.json
 8f62ebb45840b7fe6a6b65e556c898012d59fdf0 data/c/tags/item/seeds/asparagus.json
 208c537edb6f75409d7d6f30070af5779f118b5b data/c/tags/item/seeds/barley.json
