@@ -3,6 +3,8 @@
     "croptopia:asparagus",
     "#c:vegetables/asparagus",
     "croptopia:asparagus",
-    "#c:crops/asparagus"
+    "#c:crops/asparagus",
+    "croptopia:asparagus_seed",
+    "#c:seeds/asparagus"
   ]
 }

@@ -3,6 +3,8 @@
     "croptopia:cabbage",
     "#c:vegetables/cabbage",
     "croptopia:cabbage",
-    "#c:crops/cabbage"
+    "#c:crops/cabbage",
+    "croptopia:cabbage_seed",
+    "#c:seeds/cabbage"
   ]
 }

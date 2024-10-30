@@ -3,6 +3,8 @@
     "croptopia:zucchini",
     "#c:vegetables/zucchini",
     "croptopia:zucchini",
-    "#c:crops/zucchini"
+    "#c:crops/zucchini",
+    "croptopia:zucchini_seed",
+    "#c:seeds/zucchini"
   ]
 }

@@ -3,6 +3,8 @@
     "croptopia:kale",
     "#c:vegetables/kale",
     "croptopia:kale",
-    "#c:crops/kale"
+    "#c:crops/kale",
+    "croptopia:kale_seed",
+    "#c:seeds/kale"
   ]
 }

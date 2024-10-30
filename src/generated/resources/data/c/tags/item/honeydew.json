@@ -3,6 +3,8 @@
     "croptopia:honeydew",
     "#c:fruits/honeydew",
     "croptopia:honeydew",
-    "#c:crops/honeydew"
+    "#c:crops/honeydew",
+    "croptopia:honeydew_seed",
+    "#c:seeds/honeydew"
   ]
 }

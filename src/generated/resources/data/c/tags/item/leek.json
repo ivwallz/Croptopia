@@ -3,6 +3,8 @@
     "croptopia:leek",
     "#c:vegetables/leek",
     "croptopia:leek",
-    "#c:crops/leek"
+    "#c:crops/leek",
+    "croptopia:leek_seed",
+    "#c:seeds/leek"
   ]
 }
