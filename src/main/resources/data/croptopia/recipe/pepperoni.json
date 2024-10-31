@@ -8,10 +8,10 @@
       "item": "minecraft:porkchop"
     },
     {
-      "tag": "${dependent}:paprika"
+      "tag": "c:paprika"
     },
     {
-      "tag": "${dependent}:chile_peppers"
+      "tag": "c:chile_peppers"
     }
   ],
   "result": {

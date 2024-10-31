@@ -10,22 +10,22 @@
       "item": "minecraft:egg"
     },
     "2": {
-      "tag": "${dependent}:milks"
+      "tag": "c:milks"
     },
     "3": {
-      "tag": "${dependent}:vanilla"
+      "tag": "c:vanilla"
     },
     "4": {
-      "tag": "${dependent}:wines"
+      "tag": "c:wines"
     },
     "5": {
-      "tag": "${dependent}:strawberries"
+      "tag": "c:strawberries"
     },
     "6": {
       "item": "minecraft:bread"
     },
     "7": {
-      "tag": "${dependent}:butters"
+      "tag": "c:butters"
     }
   },
   "result": {

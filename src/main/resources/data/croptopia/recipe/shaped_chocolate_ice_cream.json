@@ -10,10 +10,10 @@
       "item": "minecraft:egg"
     },
     "2": {
-      "tag": "${dependent}:chocolates"
+      "tag": "c:chocolates"
     },
     "3": {
-      "tag": "${dependent}:milk_bottles"
+      "tag": "c:milk_bottles"
     },
     "4": {
       "item": "minecraft:sugar"

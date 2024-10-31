@@ -2,19 +2,19 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "${dependent}:onions"
+      "tag": "c:onions"
     },
     {
       "item": "croptopia:cooking_pot"
     },
     {
-      "tag": "${dependent}:salts"
+      "tag": "c:salts"
     },
     {
-      "tag": "${dependent}:olive_oils"
+      "tag": "c:olive_oils"
     },
     {
-      "tag": "${dependent}:flour"
+      "tag": "c:flour"
     }
   ],
   "result": {

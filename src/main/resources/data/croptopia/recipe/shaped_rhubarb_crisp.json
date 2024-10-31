@@ -7,25 +7,25 @@
   ],
   "key": {
     "1": {
-      "tag": "${dependent}:rhubarb"
+      "tag": "c:rhubarb"
     },
     "2": {
       "item": "minecraft:sugar"
     },
     "3": {
-      "tag": "${dependent}:cinnamon"
+      "tag": "c:cinnamon"
     },
     "4": {
-      "tag": "${dependent}:oats"
+      "tag": "c:oats"
     },
     "5": {
-      "tag": "${dependent}:flour"
+      "tag": "c:flour"
     },
     "6": {
-      "tag": "${dependent}:butters"
+      "tag": "c:butters"
     },
     "7": {
-      "tag": "${dependent}:salts"
+      "tag": "c:salts"
     }
   },
   "result": {

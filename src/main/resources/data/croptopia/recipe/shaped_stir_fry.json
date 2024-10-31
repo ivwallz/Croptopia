@@ -6,19 +6,19 @@
   ],
   "key": {
     "1": {
-      "tag": "${dependent}:broccoli"
+      "tag": "c:broccoli"
     },
     "2": {
-      "tag": "${dependent}:olive_oils"
+      "tag": "c:olive_oils"
     },
     "3": {
-      "tag": "${dependent}:garlic"
+      "tag": "c:garlic"
     },
     "4": {
-      "tag": "${dependent}:greenonions"
+      "tag": "c:greenonions"
     },
     "5": {
-      "tag": "${dependent}:bellpeppers"
+      "tag": "c:bellpeppers"
     },
     "6": {
       "item": "minecraft:carrot"

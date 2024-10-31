@@ -5,13 +5,13 @@
       "item": "minecraft:bowl"
     },
     {
-      "tag": "${dependent}:leek"
+      "tag": "c:leek"
     },
     {
       "item": "minecraft:potato"
     },
     {
-      "tag": "${dependent}:milks"
+      "tag": "c:milks"
     }
   ],
   "result": {

@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "${dependent}:rice"
+      "tag": "c:rice"
     },
     {
-      "tag": "${dependent}:almonds"
+      "tag": "c:almonds"
     },
     {
-      "tag": "${dependent}:limes"
+      "tag": "c:limes"
     },
     {
-      "tag": "${dependent}:water_bottles"
+      "tag": "c:water_bottles"
     },
     {
       "item": "minecraft:sugar"

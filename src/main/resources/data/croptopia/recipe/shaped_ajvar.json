@@ -6,22 +6,22 @@
   ],
   "key": {
     "1": {
-      "tag": "${dependent}:bellpeppers"
+      "tag": "c:bellpeppers"
     },
     "2": {
-      "tag": "${dependent}:eggplants"
+      "tag": "c:eggplants"
     },
     "3": {
-      "tag": "${dependent}:garlic"
+      "tag": "c:garlic"
     },
     "4": {
-      "tag": "${dependent}:chile_peppers"
+      "tag": "c:chile_peppers"
     },
     "5": {
-      "tag": "${dependent}:olive_oils"
+      "tag": "c:olive_oils"
     },
     "6": {
-      "tag": "${dependent}:salts"
+      "tag": "c:salts"
     }
   },
   "result": {

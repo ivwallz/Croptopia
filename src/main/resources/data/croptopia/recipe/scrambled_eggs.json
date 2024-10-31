@@ -8,7 +8,7 @@
       "item": "minecraft:egg"
     },
     {
-      "tag": "${dependent}:cheeses"
+      "tag": "c:cheeses"
     }
   ],
   "result": {

@@ -7,16 +7,16 @@
   ],
   "key": {
     "1": {
-      "tag": "${dependent}:radishes"
+      "tag": "c:radishes"
     },
     "2": {
-      "tag": "${dependent}:olive_oils"
+      "tag": "c:olive_oils"
     },
     "3": {
-      "tag": "${dependent}:garlic"
+      "tag": "c:garlic"
     },
     "4": {
-      "tag": "${dependent}:salts"
+      "tag": "c:salts"
     },
     "5": {
       "item": "croptopia:pepper"

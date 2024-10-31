@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "${dependent}:corn"
+      "tag": "c:corn"
     },
     {
-      "tag": "${dependent}:corn"
+      "tag": "c:corn"
     },
     {
-      "tag": "${dependent}:corn"
+      "tag": "c:corn"
     },
     {
-      "tag": "${dependent}:corn"
+      "tag": "c:corn"
     }
   ],
   "result": {

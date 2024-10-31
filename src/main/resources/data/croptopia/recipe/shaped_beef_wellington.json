@@ -13,13 +13,13 @@
       "item": "minecraft:beef"
     },
     "2": {
-      "tag": "${dependent}:mustard"
+      "tag": "c:mustard"
     },
     "3": {
       "item": "croptopia:pepper"
     },
     "4": {
-      "tag": "${dependent}:onions"
+      "tag": "c:onions"
     },
     "5": {
       "item": "minecraft:egg"
@@ -28,7 +28,7 @@
       "item": "minecraft:brown_mushroom"
     },
     "9": {
-      "tag": "${dependent}:flour"
+      "tag": "c:flour"
     }
   },
   "result": {

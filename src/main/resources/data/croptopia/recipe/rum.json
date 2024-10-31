@@ -5,10 +5,10 @@
       "item": "minecraft:glass_bottle"
     },
     {
-      "tag": "${dependent}:molasses"
+      "tag": "c:molasses"
     },
     {
-      "tag": "${dependent}:water_bottles"
+      "tag": "c:water_bottles"
     }
   ],
   "result": {

@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-30T23:01:36.0491845	Loot Tables
+// 1.21.1	2024-10-30T23:06:45.6292059	Loot Tables
 2bf75c0eefd157381ebe38b3b37020414e2001bd data/croptopia/loot_table/blocks/almond_crop.json
 8e42a1453e5e83bbe99d3ba599a3ef4f9172bba6 data/croptopia/loot_table/blocks/almond_sapling.json
 a40b8ac726589de463c03b44963cfb3dfb965828 data/croptopia/loot_table/blocks/apple_crop.json
@@ -96,7 +96,7 @@ ef951ed8cf243e07b2f47c8bf58d7ef40d983700 data/croptopia/loot_table/blocks/plum_s
 ee5169d749c194c1083f4cbbf1e50759794ff556 data/croptopia/loot_table/blocks/rice_crop.json
 743d43d3d3ec4856cb8ec4c2f3adacad54add47d data/croptopia/loot_table/blocks/rutabaga_crop.json
 38d2445ce7d318bfef64fb51d8280b6dec339ca1 data/croptopia/loot_table/blocks/saguaro_crop.json
-99a725575e1520851bc12723d05e8a06246a0875 data/croptopia/loot_table/blocks/salt_ore.json
+133173a9ae519df352b6f440b56a2ced116f1aac data/croptopia/loot_table/blocks/salt_ore.json
 e238357c165ff84e717a0d2dd39dae9ff67dd135 data/croptopia/loot_table/blocks/soybean_crop.json
 9f6bf725d3a42eeeafee15591d0ffd85dd67f476 data/croptopia/loot_table/blocks/spinach_crop.json
 cb53168e8f2995a624c01d87dba8bf5de83d0c29 data/croptopia/loot_table/blocks/squash_crop.json

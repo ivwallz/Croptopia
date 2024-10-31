@@ -1,7 +1,7 @@
 {
   "type": "minecraft:campfire_cooking",
   "ingredient": {
-    "tag": "${dependent}:yams"
+    "tag": "c:yams"
   },
   "result": {
     "id": "croptopia:baked_yam"

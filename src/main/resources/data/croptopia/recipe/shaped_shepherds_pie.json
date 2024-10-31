@@ -13,7 +13,7 @@
       "tag": "croptopia:beef_mutton"
     },
     "2": {
-      "tag": "${dependent}:salts"
+      "tag": "c:salts"
     },
     "3": {
       "item": "croptopia:pepper"
@@ -22,16 +22,16 @@
       "item": "minecraft:potato"
     },
     "5": {
-      "tag": "${dependent}:tomatoes"
+      "tag": "c:tomatoes"
     },
     "6": {
-      "tag": "${dependent}:corn"
+      "tag": "c:corn"
     },
     "7": {
-      "tag": "${dependent}:garlic"
+      "tag": "c:garlic"
     },
     "8": {
-      "tag": "${dependent}:onions"
+      "tag": "c:onions"
     }
   },
   "result": {

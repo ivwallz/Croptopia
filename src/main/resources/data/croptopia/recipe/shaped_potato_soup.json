@@ -10,16 +10,16 @@
       "item": "minecraft:potato"
     },
     "2": {
-      "tag": "${dependent}:flour"
+      "tag": "c:flour"
     },
     "3": {
-      "tag": "${dependent}:greenonions"
+      "tag": "c:greenonions"
     },
     "4": {
       "item": "croptopia:bacon"
     },
     "5": {
-      "tag": "${dependent}:water_bottles"
+      "tag": "c:water_bottles"
     }
   },
   "result": {

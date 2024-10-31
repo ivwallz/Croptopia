@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "${dependent}:tortillas"
+      "tag": "c:tortillas"
     },
     {
-      "tag": "${dependent}:cheeses"
+      "tag": "c:cheeses"
     },
     {
-      "tag": "${dependent}:lettuce"
+      "tag": "c:lettuce"
     },
     {
       "item": "croptopia:salsa"

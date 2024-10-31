@@ -5,16 +5,16 @@
       "item": "minecraft:bowl"
     },
     {
-      "tag": "${dependent}:cucumbers"
+      "tag": "c:cucumbers"
     },
     {
       "item": "minecraft:carrot"
     },
     {
-      "tag": "${dependent}:corn"
+      "tag": "c:corn"
     },
     {
-      "tag": "${dependent}:lettuce"
+      "tag": "c:lettuce"
     }
   ],
   "result": {

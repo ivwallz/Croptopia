@@ -7,25 +7,25 @@
   ],
   "key": {
     "1": {
-      "tag": "${dependent}:fruits"
+      "tag": "c:fruits"
     },
     "2": {
       "item": "minecraft:sugar"
     },
     "3": {
-      "tag": "${dependent}:lemons"
+      "tag": "c:lemons"
     },
     "4": {
-      "tag": "${dependent}:pecans"
+      "tag": "c:pecans"
     },
     "5": {
       "item": "croptopia:cinnamon"
     },
     "6": {
-      "tag": "${dependent}:salts"
+      "tag": "c:salts"
     },
     "7": {
-      "tag": "${dependent}:nutmegs"
+      "tag": "c:nutmegs"
     },
     "8": {
       "item": "minecraft:egg"

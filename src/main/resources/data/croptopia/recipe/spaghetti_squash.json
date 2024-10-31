@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "${dependent}:squashes"
+      "tag": "c:squashes"
     },
     {
-      "tag": "${dependent}:chile_peppers"
+      "tag": "c:chile_peppers"
     },
     {
-      "tag": "${dependent}:olive_oils"
+      "tag": "c:olive_oils"
     },
     {
       "item": "croptopia:frying_pan"

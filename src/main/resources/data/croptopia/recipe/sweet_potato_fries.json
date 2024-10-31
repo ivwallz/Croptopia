@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "${dependent}:sweetpotatos"
+      "tag": "c:sweetpotatos"
     },
     {
       "item": "croptopia:cooking_pot"
     },
     {
-      "tag": "${dependent}:salts"
+      "tag": "c:salts"
     },
     {
-      "tag": "${dependent}:olive_oils"
+      "tag": "c:olive_oils"
     }
   ],
   "result": {

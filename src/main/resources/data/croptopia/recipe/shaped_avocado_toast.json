@@ -6,7 +6,7 @@
   ],
   "key": {
     "1": {
-      "tag": "${dependent}:avocados"
+      "tag": "c:avocados"
     },
     "2": {
       "item": "croptopia:toast"

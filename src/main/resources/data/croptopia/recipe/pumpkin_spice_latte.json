@@ -5,10 +5,10 @@
       "item": "minecraft:sugar"
     },
     {
-      "tag": "${dependent}:paprika"
+      "tag": "c:paprika"
     },
     {
-      "tag": "${dependent}:milks"
+      "tag": "c:milks"
     },
     {
       "item": "minecraft:pumpkin"

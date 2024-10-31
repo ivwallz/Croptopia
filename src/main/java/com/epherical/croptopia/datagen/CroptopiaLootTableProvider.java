@@ -81,7 +81,7 @@ public class CroptopiaLootTableProvider extends BlockLootSubProvider {
         this.add(Content.SALT_ORE_BLOCK,
                 block -> this.createSilkTouchDispatchTable(block,
                         this.applyExplosionCondition(block,
-                                LootItem.lootTableItem(Content.SALT_ORE)
+                                LootItem.lootTableItem(Content.SALT)
                                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(2, 5)))
                                         .apply(ApplyBonusCount.addUniformBonusCount(registries.holderOrThrow(Enchantments.FORTUNE), 2)))));
     }
