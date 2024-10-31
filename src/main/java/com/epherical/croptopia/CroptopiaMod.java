@@ -13,6 +13,7 @@ import com.epherical.croptopia.datagen.CroptopiaBlockTagProvider;
 import com.epherical.croptopia.datagen.CroptopiaIndependentItemTagProvider;
 import com.epherical.croptopia.datagen.CroptopiaItemModelProvider;
 import com.epherical.croptopia.datagen.CroptopiaItemTagProvider;
+import com.epherical.croptopia.datagen.CroptopiaLootTableProvider;
 import com.epherical.croptopia.datagen.CroptopiaRecipeProvider;
 import com.epherical.croptopia.datagen.CroptopiaWorldBiomeSelection;
 import com.epherical.croptopia.datagen.CroptopiaWorldGeneration;
@@ -35,6 +36,8 @@ import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.loot.LootTableProvider;
+import net.minecraft.data.loot.packs.VanillaLootTableProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.CreativeModeTab;
@@ -52,6 +55,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -75,6 +79,8 @@ import net.neoforged.neoforge.registries.RegisterEvent;
 import org.slf4j.Logger;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
@@ -201,6 +207,12 @@ public class CroptopiaMod {
                     new CroptopiaBiomeTagProvider(output, lookupProvider, helper));
             CroptopiaBlockTagProvider blockProvider = generator.addProvider(event.includeServer(),
                     new CroptopiaBlockTagProvider(output, Registries.BLOCK, lookupProvider, helper));
+
+            LootTableProvider.SubProviderEntry blocks = new LootTableProvider.SubProviderEntry(CroptopiaLootTableProvider::new, LootContextParamSets.BLOCK);
+            LootTableProvider lootProvider = new LootTableProvider(output, Collections.emptySet(), List.of(blocks), lookupProvider);
+
+            generator.addProvider(event.includeServer(), lootProvider);
+
             CroptopiaIndependentItemTagProvider provider = new CroptopiaIndependentItemTagProvider(output, lookupProvider, itemProvider.contentsGetter(), blockProvider.contentsGetter(), helper);
             generator.addProvider(event.includeServer(), provider);
 
