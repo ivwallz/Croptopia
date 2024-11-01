@@ -33,11 +33,13 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.data.loot.packs.VanillaLootTableProvider;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.CreativeModeTab;
@@ -73,6 +75,7 @@ import net.neoforged.neoforge.common.world.BiomeModifier;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.neoforged.neoforge.registries.RegisterEvent;
@@ -80,9 +83,12 @@ import org.slf4j.Logger;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
+
+import static com.epherical.croptopia.common.MiscNames.MOD_ID;
 
 @Mod(CroptopiaMod.MODID)
 public class CroptopiaMod {
@@ -101,6 +107,15 @@ public class CroptopiaMod {
 
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB = CREATIVE_MODE_TABS.register("croptopia", () ->
+            CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.croptopia"))
+            .displayItems((featureFlagSet, output) ->
+                    BuiltInRegistries.ITEM.entrySet().stream()
+                            .filter(entry -> entry.getKey().location().getNamespace().equals(MOD_ID))
+                            .sorted(Comparator.comparing(entry -> BuiltInRegistries.ITEM.getId(entry.getValue())))
+                            .forEach(entry -> output.accept(entry.getValue())))
+            .icon(() -> new ItemStack(Content.COFFEE)).build());
 
     public static final DeferredRegister<MapCodec<? extends BiomeModifier>> BIOME_SERIALIZER =
             DeferredRegister.create(NeoForgeRegistries.Keys.BIOME_MODIFIER_SERIALIZERS, MiscNames.MOD_ID);
