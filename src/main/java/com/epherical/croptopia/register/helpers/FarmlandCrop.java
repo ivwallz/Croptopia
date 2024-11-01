@@ -11,10 +11,13 @@ import com.epherical.croptopia.util.BlockConvertible;
 import com.epherical.croptopia.util.FoodConstructor;
 import com.epherical.croptopia.util.ItemConvertibleWithPlural;
 import com.epherical.croptopia.util.RegisterFunction;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,11 +45,14 @@ public class FarmlandCrop implements ItemConvertibleWithPlural, BlockConvertible
     private Item seedItem;
     private final TagKey<Biome> biomes; // todo implement
 
-    public FarmlandCrop(String cropName, boolean isPlural, TagCategory category, FoodConstructor registry, TagKey<Biome> biomes) {
-        this(cropName, cropName, isPlural, category, registry, biomes);
+    private final ResourceKey<ConfiguredFeature<?, ?>> configKey;
+    private final ResourceKey<PlacedFeature> placedKey;
+
+    public FarmlandCrop(String cropName, boolean isPlural, TagCategory category, FoodConstructor registry, TagKey<Biome> biomes, ResourceKey<ConfiguredFeature<?, ?>> configKey, ResourceKey<PlacedFeature> placedKey) {
+        this(cropName, cropName, isPlural, category, registry, biomes, configKey, placedKey);
     }
 
-    public FarmlandCrop(String cropName, String dropName, boolean isPlural, TagCategory category, FoodConstructor registry, TagKey<Biome> biomes) {
+    public FarmlandCrop(String cropName, String dropName, boolean isPlural, TagCategory category, FoodConstructor registry, TagKey<Biome> biomes, ResourceKey<ConfiguredFeature<?, ?>> configKey, ResourceKey<PlacedFeature> placedKey) {
         Objects.requireNonNull(category);
         // TERRIBLE CODE DESIGN
         Content.BLOCK_REGISTER.reg(this::registerBlock);
@@ -58,6 +64,8 @@ public class FarmlandCrop implements ItemConvertibleWithPlural, BlockConvertible
         this.tagCategory = category;
         this.biomes = biomes;
         this.registry = registry;
+        this.configKey = configKey;
+        this.placedKey = placedKey;
         FARMLAND_CROPS.add(this);
     }
 
@@ -92,6 +100,15 @@ public class FarmlandCrop implements ItemConvertibleWithPlural, BlockConvertible
     public static List<FarmlandCrop> copy() {
         return FARMLAND_CROPS;
     }
+
+    public ResourceKey<PlacedFeature> getPlacedKey() {
+        return placedKey;
+    }
+
+    public ResourceKey<ConfiguredFeature<?, ?>> getConfigKey() {
+        return configKey;
+    }
+
 
     /*public static void registerBlocks(RegisterFunction<Block> register) {
         for (FarmlandCrop farmlandCrop : FARMLAND_CROPS) {

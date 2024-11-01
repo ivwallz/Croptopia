@@ -3,9 +3,6 @@ package com.epherical.croptopia.register;
 import com.epherical.croptopia.common.BlockNames;
 import com.epherical.croptopia.common.ItemNamesV2;
 import com.epherical.croptopia.common.MiscNames;
-import com.epherical.croptopia.common.Tags;
-import com.epherical.croptopia.common.generator.ConfiguredFeatureKeys;
-import com.epherical.croptopia.common.generator.PlacedFeatureKeys;
 import com.epherical.croptopia.items.Drink;
 import com.epherical.croptopia.items.ReferenceItem;
 import com.epherical.croptopia.items.Soup;
@@ -48,6 +45,9 @@ import java.util.stream.Stream;
 
 import static com.epherical.croptopia.CroptopiaMod.createGroup;
 import static com.epherical.croptopia.CroptopiaMod.createIdentifier;
+import static com.epherical.croptopia.common.Tags.*;
+import static com.epherical.croptopia.common.generator.ConfiguredFeatureKeys.*;
+import static com.epherical.croptopia.common.generator.PlacedFeatureKeys.*;
 import static com.epherical.croptopia.util.FoodConstructor.*;
 
 public class Content {
@@ -56,119 +56,119 @@ public class Content {
     public static final RegistryDelay<Block, Block> BLOCK_REGISTER = new RegistryDelay<>(MiscNames.MOD_ID);
 
 
-    public static final FarmlandCrop ARTICHOKE = new FarmlandCrop(ItemNamesV2.ARTICHOKE, true, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_ARTICHOKE);
-    public static final FarmlandCrop ASPARAGUS = new FarmlandCrop(ItemNamesV2.ASPARAGUS, false, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_ASPARAGUS);
-    public static final FarmlandCrop BARLEY = new FarmlandCrop(ItemNamesV2.BARLEY, false, TagCategory.GRAIN, RAW_CROP_1, Tags.HAS_BARLEY);
-    public static final FarmlandCrop BASIL = new FarmlandCrop(ItemNamesV2.BASIL, false, TagCategory.CROPS, RAW_CROP_1, Tags.HAS_BASIL);
-    public static final FarmlandCrop BELLPEPPER = new FarmlandCrop(ItemNamesV2.BELLPEPPER, true, TagCategory.FRUITS, RAW_CROP_1, Tags.HAS_BELLPEPPER);
-    public static final FarmlandCrop BLACKBEAN = new FarmlandCrop(ItemNamesV2.BLACKBEAN, true, TagCategory.CROPS, RAW_CROP_1, Tags.HAS_BLACKBEAN);
-    public static final FarmlandCrop BLACKBERRY = new FarmlandCrop(ItemNamesV2.BLACKBERRY, true, TagCategory.FRUITS, RAW_CROP_1, Tags.HAS_BLACKBERRY);
-    public static final FarmlandCrop BLUEBERRY = new FarmlandCrop(ItemNamesV2.BLUEBERRY, true, TagCategory.FRUITS, RAW_CROP_1, Tags.HAS_BLUEBERRY);
-    public static final FarmlandCrop BROCCOLI = new FarmlandCrop(ItemNamesV2.BROCCOLI, false, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_BROCCOLI);
-    public static final FarmlandCrop CABBAGE = new FarmlandCrop(ItemNamesV2.CABBAGE, false, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_CABBAGE);
-    public static final FarmlandCrop CANTALOUPE = new FarmlandCrop(ItemNamesV2.CANTALOUPE, true, TagCategory.FRUITS, RAW_CROP_1, Tags.HAS_CANTALOUPE);
-    public static final FarmlandCrop CAULIFLOWER = new FarmlandCrop(ItemNamesV2.CAULIFLOWER, false, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_CAULIFLOWER);
-    public static final FarmlandCrop CELERY = new FarmlandCrop(ItemNamesV2.CELERY, false, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_CELERY);
-    public static final FarmlandCrop CHILE_PEPPER = new FarmlandCrop(ItemNamesV2.CHILE_PEPPER, true, TagCategory.CROPS, RAW_CROP_1, Tags.HAS_CHILE_PEPPER);
-    public static final FarmlandCrop COFFEE_BEANS = new FarmlandCrop("coffee", ItemNamesV2.COFFEE_BEANS, false, TagCategory.CROPS, RAW_CROP_1, Tags.HAS_COFFEE_BEANS);
-    public static final FarmlandCrop CORN = new FarmlandCrop(ItemNamesV2.CORN, false, TagCategory.GRAIN, RAW_CROP_1, Tags.HAS_CORN);
-    public static final FarmlandCrop CRANBERRY = new FarmlandCrop(ItemNamesV2.CRANBERRY, true, TagCategory.FRUITS, RAW_CROP_1, Tags.HAS_CRANBERRY);
-    public static final FarmlandCrop CUCUMBER = new FarmlandCrop(ItemNamesV2.CUCUMBER, true, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_CUCUMBER);
-    public static final FarmlandCrop CURRANT = new FarmlandCrop(ItemNamesV2.CURRANT, true, TagCategory.FRUITS, RAW_CROP_1, Tags.HAS_CURRANT);
-    public static final FarmlandCrop EGGPLANT = new FarmlandCrop(ItemNamesV2.EGGPLANT, true, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_EGGPLANT);
-    public static final FarmlandCrop ELDERBERRY = new FarmlandCrop(ItemNamesV2.ELDERBERRY, true, TagCategory.FRUITS, RAW_CROP_1, Tags.HAS_ELDERBERRY);
-    public static final FarmlandCrop GARLIC = new FarmlandCrop(ItemNamesV2.GARLIC, false, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_GARLIC);
-    public static final FarmlandCrop GINGER = new FarmlandCrop(ItemNamesV2.GINGER, true, TagCategory.VEGETABLES, null, Tags.HAS_GINGER);
-    public static final FarmlandCrop GRAPE = new FarmlandCrop(ItemNamesV2.GRAPE, true, TagCategory.FRUITS, RAW_CROP_1, Tags.HAS_GRAPE);
-    public static final FarmlandCrop GREENBEAN = new FarmlandCrop(ItemNamesV2.GREENBEAN, true, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_GREENBEAN);
-    public static final FarmlandCrop GREENONION = new FarmlandCrop(ItemNamesV2.GREENONION, true, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_GREENONION);
-    public static final FarmlandCrop HONEYDEW = new FarmlandCrop(ItemNamesV2.HONEYDEW, false, TagCategory.FRUITS, RAW_CROP_1, Tags.HAS_HONEYDEW);
-    public static final FarmlandCrop HOPS = new FarmlandCrop(ItemNamesV2.HOPS, false, TagCategory.CROPS, null, Tags.HAS_HOPS);
-    public static final FarmlandCrop KALE = new FarmlandCrop(ItemNamesV2.KALE, false, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_KALE);
-    public static final FarmlandCrop KIWI = new FarmlandCrop(ItemNamesV2.KIWI, true, TagCategory.FRUITS, RAW_CROP_1, Tags.HAS_KIWI);
-    public static final FarmlandCrop LEEK = new FarmlandCrop(ItemNamesV2.LEEK, false, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_LEEK);
-    public static final FarmlandCrop LETTUCE = new FarmlandCrop(ItemNamesV2.LETTUCE, false, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_LETTUCE);
-    public static final FarmlandCrop MUSTARD = new FarmlandCrop(ItemNamesV2.MUSTARD, false, TagCategory.VEGETABLES, null, Tags.HAS_MUSTARD);
-    public static final FarmlandCrop OAT = new FarmlandCrop(ItemNamesV2.OAT, false, TagCategory.GRAIN, RAW_CROP_1, Tags.HAS_OAT);
-    public static final FarmlandCrop OLIVE = new FarmlandCrop(ItemNamesV2.OLIVE, true, TagCategory.FRUITS, RAW_CROP_1, Tags.HAS_OLIVE);
-    public static final FarmlandCrop ONION = new FarmlandCrop(ItemNamesV2.ONION, true, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_ONION);
-    public static final FarmlandCrop PEANUT = new FarmlandCrop(ItemNamesV2.PEANUT, true, TagCategory.CROPS, RAW_CROP_1, Tags.HAS_PEANUT);
-    public static final FarmlandCrop PEPPER = new FarmlandCrop(ItemNamesV2.PEPPER, false, TagCategory.CROPS, null, Tags.HAS_PEPPER);
-    public static final FarmlandCrop PINEAPPLE = new FarmlandCrop(ItemNamesV2.PINEAPPLE, true, TagCategory.FRUITS, RAW_CROP_1, Tags.HAS_PINEAPPLE);
-    public static final FarmlandCrop RADISH = new FarmlandCrop(ItemNamesV2.RADISH, true, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_RADISH);
-    public static final FarmlandCrop RASPBERRY = new FarmlandCrop(ItemNamesV2.RASPBERRY, true, TagCategory.FRUITS, RAW_CROP_1, Tags.HAS_RASPBERRY);
-    public static final FarmlandCrop RHUBARB = new FarmlandCrop(ItemNamesV2.RHUBARB, false, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_RHUBARB);
-    public static final FarmlandCrop RICE = new FarmlandCrop(ItemNamesV2.RICE, false, TagCategory.GRAIN, REG_1, Tags.HAS_RICE);
-    public static final FarmlandCrop RUTABAGA = new FarmlandCrop(ItemNamesV2.RUTABAGA, true, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_RUTABAGA);
-    public static final FarmlandCrop SAGUARO = new FarmlandCrop(ItemNamesV2.SAGUARO, true, TagCategory.FRUITS, RAW_CROP_1, Tags.HAS_SAGUARO);
-    public static final FarmlandCrop SOYBEAN = new FarmlandCrop(ItemNamesV2.SOYBEAN, true, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_SOYBEAN);
-    public static final FarmlandCrop SPINACH = new FarmlandCrop(ItemNamesV2.SPINACH, false, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_SPINACH);
-    public static final FarmlandCrop SQUASH = new FarmlandCrop(ItemNamesV2.SQUASH, true, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_SQUASH);
-    public static final FarmlandCrop STRAWBERRY = new FarmlandCrop(ItemNamesV2.STRAWBERRY, true, TagCategory.FRUITS, RAW_CROP_1, Tags.HAS_STRAWBERRY);
-    public static final FarmlandCrop SWEETPOTATO = new FarmlandCrop(ItemNamesV2.SWEETPOTATO, true, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_SWEETPOTATO);
-    public static final FarmlandCrop TEA_LEAVES = new FarmlandCrop("tea", ItemNamesV2.TEA_LEAVES, false, TagCategory.CROPS, null, Tags.HAS_TEA_LEAVES);
-    public static final FarmlandCrop TOMATILLO = new FarmlandCrop(ItemNamesV2.TOMATILLO, true, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_TOMATILLO);
-    public static final FarmlandCrop TOMATO = new FarmlandCrop(ItemNamesV2.TOMATO, true, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_TOMATO);
-    public static final FarmlandCrop TURMERIC = new FarmlandCrop(ItemNamesV2.TURMERIC, false, TagCategory.CROPS, null, Tags.HAS_TURMERIC);
-    public static final FarmlandCrop TURNIP = new FarmlandCrop(ItemNamesV2.TURNIP, true, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_TURNIP);
-    public static final FarmlandCrop VANILLA = new FarmlandCrop(ItemNamesV2.VANILLA, false, TagCategory.CROPS, null, Tags.HAS_VANILLA);
-    public static final FarmlandCrop YAM = new FarmlandCrop(ItemNamesV2.YAM, true, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_YAM);
-    public static final FarmlandCrop ZUCCHINI = new FarmlandCrop(ItemNamesV2.ZUCCHINI, false, TagCategory.VEGETABLES, RAW_CROP_1, Tags.HAS_ZUCCHINI);
+    public static final FarmlandCrop ARTICHOKE = new FarmlandCrop(ItemNamesV2.ARTICHOKE, true, TagCategory.VEGETABLES, RAW_CROP_1, HAS_ARTICHOKE, ARTICHOKE_CROP_KEY, ARTICHOKE_CROP_PLACED_KEY);
+    public static final FarmlandCrop ASPARAGUS = new FarmlandCrop(ItemNamesV2.ASPARAGUS, false, TagCategory.VEGETABLES, RAW_CROP_1, HAS_ASPARAGUS, ASPARAGUS_CROP_KEY, ASPARAGUS_CROP_PLACED_KEY);
+    public static final FarmlandCrop BARLEY = new FarmlandCrop(ItemNamesV2.BARLEY, false, TagCategory.GRAIN, RAW_CROP_1, HAS_BARLEY, BARLEY_CROP_KEY, BARLEY_CROP_PLACED_KEY);
+    public static final FarmlandCrop BASIL = new FarmlandCrop(ItemNamesV2.BASIL, false, TagCategory.CROPS, RAW_CROP_1, HAS_BASIL, BASIL_CROP_KEY, BASIL_CROP_PLACED_KEY);
+    public static final FarmlandCrop BELLPEPPER = new FarmlandCrop(ItemNamesV2.BELLPEPPER, true, TagCategory.FRUITS, RAW_CROP_1, HAS_BELLPEPPER, BELLPEPPER_CROP_KEY, BELLPEPPER_CROP_PLACED_KEY);
+    public static final FarmlandCrop BLACKBEAN = new FarmlandCrop(ItemNamesV2.BLACKBEAN, true, TagCategory.CROPS, RAW_CROP_1, HAS_BLACKBEAN, BLACKBEAN_CROP_KEY, BLACKBEAN_CROP_PLACED_KEY);
+    public static final FarmlandCrop BLACKBERRY = new FarmlandCrop(ItemNamesV2.BLACKBERRY, true, TagCategory.FRUITS, RAW_CROP_1, HAS_BLACKBERRY, BLACKBERRY_CROP_KEY, BLACKBERRY_CROP_PLACED_KEY);
+    public static final FarmlandCrop BLUEBERRY = new FarmlandCrop(ItemNamesV2.BLUEBERRY, true, TagCategory.FRUITS, RAW_CROP_1, HAS_BLUEBERRY, BLUEBERRY_CROP_KEY, BLUEBERRY_CROP_PLACED_KEY);
+    public static final FarmlandCrop BROCCOLI = new FarmlandCrop(ItemNamesV2.BROCCOLI, false, TagCategory.VEGETABLES, RAW_CROP_1, HAS_BROCCOLI, BROCCOLI_CROP_KEY, BROCCOLI_CROP_PLACED_KEY);
+    public static final FarmlandCrop CABBAGE = new FarmlandCrop(ItemNamesV2.CABBAGE, false, TagCategory.VEGETABLES, RAW_CROP_1, HAS_CABBAGE, CABBAGE_CROP_KEY, CABBAGE_CROP_PLACED_KEY);
+    public static final FarmlandCrop CANTALOUPE = new FarmlandCrop(ItemNamesV2.CANTALOUPE, true, TagCategory.FRUITS, RAW_CROP_1, HAS_CANTALOUPE, CANTALOUPE_CROP_KEY, CANTALOUPE_CROP_PLACED_KEY);
+    public static final FarmlandCrop CAULIFLOWER = new FarmlandCrop(ItemNamesV2.CAULIFLOWER, false, TagCategory.VEGETABLES, RAW_CROP_1, HAS_CAULIFLOWER, CAULIFLOWER_CROP_KEY, CAULIFLOWER_CROP_PLACED_KEY);
+    public static final FarmlandCrop CELERY = new FarmlandCrop(ItemNamesV2.CELERY, false, TagCategory.VEGETABLES, RAW_CROP_1, HAS_CELERY, CELERY_CROP_KEY, CELERY_CROP_PLACED_KEY);
+    public static final FarmlandCrop CHILE_PEPPER = new FarmlandCrop(ItemNamesV2.CHILE_PEPPER, true, TagCategory.CROPS, RAW_CROP_1, HAS_CHILE_PEPPER, CHILE_PEPPER_CROP_KEY, CHILE_PEPPER_CROP_PLACED_KEY);
+    public static final FarmlandCrop COFFEE_BEANS = new FarmlandCrop("coffee", ItemNamesV2.COFFEE_BEANS, false, TagCategory.CROPS, RAW_CROP_1, HAS_COFFEE_BEANS, COFFEE_BEANS_CROP_KEY, COFFEE_BEANS_CROP_PLACED_KEY);
+    public static final FarmlandCrop CORN = new FarmlandCrop(ItemNamesV2.CORN, false, TagCategory.GRAIN, RAW_CROP_1, HAS_CORN, CORN_CROP_KEY, CORN_CROP_PLACED_KEY);
+    public static final FarmlandCrop CRANBERRY = new FarmlandCrop(ItemNamesV2.CRANBERRY, true, TagCategory.FRUITS, RAW_CROP_1, HAS_CRANBERRY, CRANBERRY_CROP_KEY, CRANBERRY_CROP_PLACED_KEY);
+    public static final FarmlandCrop CUCUMBER = new FarmlandCrop(ItemNamesV2.CUCUMBER, true, TagCategory.VEGETABLES, RAW_CROP_1, HAS_CUCUMBER, CUCUMBER_CROP_KEY, CUCUMBER_CROP_PLACED_KEY);
+    public static final FarmlandCrop CURRANT = new FarmlandCrop(ItemNamesV2.CURRANT, true, TagCategory.FRUITS, RAW_CROP_1, HAS_CURRANT, CURRANT_CROP_KEY, CURRANT_CROP_PLACED_KEY);
+    public static final FarmlandCrop EGGPLANT = new FarmlandCrop(ItemNamesV2.EGGPLANT, true, TagCategory.VEGETABLES, RAW_CROP_1, HAS_EGGPLANT, EGGPLANT_CROP_KEY, EGGPLANT_CROP_PLACED_KEY);
+    public static final FarmlandCrop ELDERBERRY = new FarmlandCrop(ItemNamesV2.ELDERBERRY, true, TagCategory.FRUITS, RAW_CROP_1, HAS_ELDERBERRY, ELDERBERRY_CROP_KEY, ELDERBERRY_CROP_PLACED_KEY);
+    public static final FarmlandCrop GARLIC = new FarmlandCrop(ItemNamesV2.GARLIC, false, TagCategory.VEGETABLES, RAW_CROP_1, HAS_GARLIC, GARLIC_CROP_KEY, GARLIC_CROP_PLACED_KEY);
+    public static final FarmlandCrop GINGER = new FarmlandCrop(ItemNamesV2.GINGER, true, TagCategory.VEGETABLES, null, HAS_GINGER, GINGER_CROP_KEY, GINGER_CROP_PLACED_KEY);
+    public static final FarmlandCrop GRAPE = new FarmlandCrop(ItemNamesV2.GRAPE, true, TagCategory.FRUITS, RAW_CROP_1, HAS_GRAPE, GRAPE_CROP_KEY, GRAPE_CROP_PLACED_KEY);
+    public static final FarmlandCrop GREENBEAN = new FarmlandCrop(ItemNamesV2.GREENBEAN, true, TagCategory.VEGETABLES, RAW_CROP_1, HAS_GREENBEAN, GREENBEAN_CROP_KEY, GREENBEAN_CROP_PLACED_KEY);
+    public static final FarmlandCrop GREENONION = new FarmlandCrop(ItemNamesV2.GREENONION, true, TagCategory.VEGETABLES, RAW_CROP_1, HAS_GREENONION, GREENONION_CROP_KEY, GREENONION_CROP_PLACED_KEY);
+    public static final FarmlandCrop HONEYDEW = new FarmlandCrop(ItemNamesV2.HONEYDEW, false, TagCategory.FRUITS, RAW_CROP_1, HAS_HONEYDEW, HONEYDEW_CROP_KEY, HONEYDEW_CROP_PLACED_KEY);
+    public static final FarmlandCrop HOPS = new FarmlandCrop(ItemNamesV2.HOPS, false, TagCategory.CROPS, null, HAS_HOPS, HOPS_CROP_KEY, HOPS_CROP_PLACED_KEY);
+    public static final FarmlandCrop KALE = new FarmlandCrop(ItemNamesV2.KALE, false, TagCategory.VEGETABLES, RAW_CROP_1, HAS_KALE, KALE_CROP_KEY, KALE_CROP_PLACED_KEY);
+    public static final FarmlandCrop KIWI = new FarmlandCrop(ItemNamesV2.KIWI, true, TagCategory.FRUITS, RAW_CROP_1, HAS_KIWI, KIWI_CROP_KEY, KIWI_CROP_PLACED_KEY);
+    public static final FarmlandCrop LEEK = new FarmlandCrop(ItemNamesV2.LEEK, false, TagCategory.VEGETABLES, RAW_CROP_1, HAS_LEEK, LEEK_CROP_KEY, LEEK_CROP_PLACED_KEY);
+    public static final FarmlandCrop LETTUCE = new FarmlandCrop(ItemNamesV2.LETTUCE, false, TagCategory.VEGETABLES, RAW_CROP_1, HAS_LETTUCE, LETTUCE_CROP_KEY, LETTUCE_CROP_PLACED_KEY);
+    public static final FarmlandCrop MUSTARD = new FarmlandCrop(ItemNamesV2.MUSTARD, false, TagCategory.VEGETABLES, null, HAS_MUSTARD, MUSTARD_CROP_KEY, MUSTARD_CROP_PLACED_KEY);
+    public static final FarmlandCrop OAT = new FarmlandCrop(ItemNamesV2.OAT, false, TagCategory.GRAIN, RAW_CROP_1, HAS_OAT, OAT_CROP_KEY, OAT_CROP_PLACED_KEY);
+    public static final FarmlandCrop OLIVE = new FarmlandCrop(ItemNamesV2.OLIVE, true, TagCategory.FRUITS, RAW_CROP_1, HAS_OLIVE, OLIVE_CROP_KEY, OLIVE_CROP_PLACED_KEY);
+    public static final FarmlandCrop ONION = new FarmlandCrop(ItemNamesV2.ONION, true, TagCategory.VEGETABLES, RAW_CROP_1, HAS_ONION, ONION_CROP_KEY, ONION_CROP_PLACED_KEY);
+    public static final FarmlandCrop PEANUT = new FarmlandCrop(ItemNamesV2.PEANUT, true, TagCategory.CROPS, RAW_CROP_1, HAS_PEANUT, PEANUT_CROP_KEY, PEANUT_CROP_PLACED_KEY);
+    public static final FarmlandCrop PEPPER = new FarmlandCrop(ItemNamesV2.PEPPER, false, TagCategory.CROPS, null, HAS_PEPPER, PEPPER_CROP_KEY, PEPPER_CROP_PLACED_KEY);
+    public static final FarmlandCrop PINEAPPLE = new FarmlandCrop(ItemNamesV2.PINEAPPLE, true, TagCategory.FRUITS, RAW_CROP_1, HAS_PINEAPPLE, PINEAPPLE_CROP_KEY, PINEAPPLE_CROP_PLACED_KEY);
+    public static final FarmlandCrop RADISH = new FarmlandCrop(ItemNamesV2.RADISH, true, TagCategory.VEGETABLES, RAW_CROP_1, HAS_RADISH, RADISH_CROP_KEY, RADISH_CROP_PLACED_KEY);
+    public static final FarmlandCrop RASPBERRY = new FarmlandCrop(ItemNamesV2.RASPBERRY, true, TagCategory.FRUITS, RAW_CROP_1, HAS_RASPBERRY, RASPBERRY_CROP_KEY, RASPBERRY_CROP_PLACED_KEY);
+    public static final FarmlandCrop RHUBARB = new FarmlandCrop(ItemNamesV2.RHUBARB, false, TagCategory.VEGETABLES, RAW_CROP_1, HAS_RHUBARB, RHUBARB_CROP_KEY, RHUBARB_CROP_PLACED_KEY);
+    public static final FarmlandCrop RICE = new FarmlandCrop(ItemNamesV2.RICE, false, TagCategory.GRAIN, REG_1, HAS_RICE, RICE_CROP_KEY, RICE_CROP_PLACED_KEY);
+    public static final FarmlandCrop RUTABAGA = new FarmlandCrop(ItemNamesV2.RUTABAGA, true, TagCategory.VEGETABLES, RAW_CROP_1, HAS_RUTABAGA, RUTABAGA_CROP_KEY, RUTABAGA_CROP_PLACED_KEY);
+    public static final FarmlandCrop SAGUARO = new FarmlandCrop(ItemNamesV2.SAGUARO, true, TagCategory.FRUITS, RAW_CROP_1, HAS_SAGUARO, SAGUARO_CROP_KEY, SAGUARO_CROP_PLACED_KEY);
+    public static final FarmlandCrop SOYBEAN = new FarmlandCrop(ItemNamesV2.SOYBEAN, true, TagCategory.VEGETABLES, RAW_CROP_1, HAS_SOYBEAN, SOYBEAN_CROP_KEY, SOYBEAN_CROP_PLACED_KEY);
+    public static final FarmlandCrop SPINACH = new FarmlandCrop(ItemNamesV2.SPINACH, false, TagCategory.VEGETABLES, RAW_CROP_1, HAS_SPINACH, SPINACH_CROP_KEY, SPINACH_CROP_PLACED_KEY);
+    public static final FarmlandCrop SQUASH = new FarmlandCrop(ItemNamesV2.SQUASH, true, TagCategory.VEGETABLES, RAW_CROP_1, HAS_SQUASH, SQUASH_CROP_KEY, SQUASH_CROP_PLACED_KEY);
+    public static final FarmlandCrop STRAWBERRY = new FarmlandCrop(ItemNamesV2.STRAWBERRY, true, TagCategory.FRUITS, RAW_CROP_1, HAS_STRAWBERRY, STRAWBERRY_CROP_KEY, STRAWBERRY_CROP_PLACED_KEY);
+    public static final FarmlandCrop SWEETPOTATO = new FarmlandCrop(ItemNamesV2.SWEETPOTATO, true, TagCategory.VEGETABLES, RAW_CROP_1, HAS_SWEETPOTATO, SWEETPOTATO_CROP_KEY, SWEETPOTATO_CROP_PLACED_KEY);
+    public static final FarmlandCrop TEA_LEAVES = new FarmlandCrop("tea", ItemNamesV2.TEA_LEAVES, false, TagCategory.CROPS, null, HAS_TEA_LEAVES, TEA_LEAVES_CROP_KEY, TEA_LEAVES_CROP_PLACED_KEY);
+    public static final FarmlandCrop TOMATILLO = new FarmlandCrop(ItemNamesV2.TOMATILLO, true, TagCategory.VEGETABLES, RAW_CROP_1, HAS_TOMATILLO, TOMATILLO_CROP_KEY, TOMATILLO_CROP_PLACED_KEY);
+    public static final FarmlandCrop TOMATO = new FarmlandCrop(ItemNamesV2.TOMATO, true, TagCategory.VEGETABLES, RAW_CROP_1, HAS_TOMATO, TOMATO_CROP_KEY, TOMATO_CROP_PLACED_KEY);
+    public static final FarmlandCrop TURMERIC = new FarmlandCrop(ItemNamesV2.TURMERIC, false, TagCategory.CROPS, null, HAS_TURMERIC, TURMERIC_CROP_KEY, TURMERIC_CROP_PLACED_KEY);
+    public static final FarmlandCrop TURNIP = new FarmlandCrop(ItemNamesV2.TURNIP, true, TagCategory.VEGETABLES, RAW_CROP_1, HAS_TURNIP, TURNIP_CROP_KEY, TURNIP_CROP_PLACED_KEY);
+    public static final FarmlandCrop VANILLA = new FarmlandCrop(ItemNamesV2.VANILLA, false, TagCategory.CROPS, null, HAS_VANILLA, VANILLA_CROP_KEY, VANILLA_CROP_PLACED_KEY);
+    public static final FarmlandCrop YAM = new FarmlandCrop(ItemNamesV2.YAM, true, TagCategory.VEGETABLES, RAW_CROP_1, HAS_YAM, YAM_CROP_KEY, YAM_CROP_PLACED_KEY);
+    public static final FarmlandCrop ZUCCHINI = new FarmlandCrop(ItemNamesV2.ZUCCHINI, false, TagCategory.VEGETABLES, RAW_CROP_1, HAS_ZUCCHINI, ZUCCHINI_CROP_KEY, ZUCCHINI_CROP_PLACED_KEY);
 
     public static final TreeCrop ALMOND = new TreeCrop(ItemNamesV2.ALMOND, true, Blocks.DARK_OAK_LOG, Blocks.DARK_OAK_LEAVES, TagCategory.NUTS, RAW_CROP_2, 4, 3, 0,
-            ConfiguredFeatureKeys.ALMOND_TREE_KEY, PlacedFeatureKeys.ALMOND_TREE_PLACED_KEY);
+            ALMOND_TREE_KEY, ALMOND_TREE_PLACED_KEY);
     public static final TreeCrop APPLE = new TreeCrop(ItemNamesV2.APPLE, true, Blocks.OAK_LOG, Blocks.OAK_LEAVES, TagCategory.FRUITS, null, 5, 3, 0,
-            ConfiguredFeatureKeys.APPLE_TREE_KEY, PlacedFeatureKeys.APPLE_TREE_PLACED_KEY);
+            APPLE_TREE_KEY, APPLE_TREE_PLACED_KEY);
     public static final TreeCrop APRICOT = new TreeCrop(ItemNamesV2.APRICOT, true, Blocks.OAK_LOG, Blocks.OAK_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 5, 2, 0,
-            ConfiguredFeatureKeys.APRICOT_TREE_KEY, PlacedFeatureKeys.APRICOT_TREE_PLACED_KEY);
+            APRICOT_TREE_KEY, APRICOT_TREE_PLACED_KEY);
     public static final TreeCrop AVOCADO = new TreeCrop(ItemNamesV2.AVOCADO, true, Blocks.SPRUCE_LOG, Blocks.OAK_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 5, 3, 0,
-            ConfiguredFeatureKeys.AVOCADO_TREE_KEY, PlacedFeatureKeys.AVOCADO_TREE_PLACED_KEY);
+            AVOCADO_TREE_KEY, AVOCADO_TREE_PLACED_KEY);
     public static final TreeCrop BANANA = new TreeCrop(ItemNamesV2.BANANA, true, Blocks.JUNGLE_LOG, Blocks.JUNGLE_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 4, 8, 0,
-            ConfiguredFeatureKeys.BANANA_TREE_KEY, PlacedFeatureKeys.BANANA_TREE_PLACED_KEY);
+            BANANA_TREE_KEY, BANANA_TREE_PLACED_KEY);
     public static final TreeCrop CASHEW = new TreeCrop(ItemNamesV2.CASHEW, true, Blocks.DARK_OAK_LOG, Blocks.DARK_OAK_LEAVES, TagCategory.CROPS, RAW_CROP_2, 4, 3, 0,
-            ConfiguredFeatureKeys.CASHEW_TREE_KEY, PlacedFeatureKeys.CASHEW_TREE_PLACED_KEY);
+            CASHEW_TREE_KEY, CASHEW_TREE_PLACED_KEY);
     public static final TreeCrop CHERRY = new TreeCrop(ItemNamesV2.CHERRY, true, Blocks.OAK_LOG, Blocks.OAK_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 5, 3, 0,
-            ConfiguredFeatureKeys.CHERRY_TREE_KEY, PlacedFeatureKeys.CHERRY_TREE_PLACED_KEY);
+            CHERRY_TREE_KEY, CHERRY_TREE_PLACED_KEY);
     public static final TreeCrop COCONUT = new TreeCrop(ItemNamesV2.COCONUT, true, Blocks.JUNGLE_LOG, Blocks.JUNGLE_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 5, 2, 3,
-            ConfiguredFeatureKeys.COCONUT_TREE_KEY, PlacedFeatureKeys.COCONUT_TREE_PLACED_KEY);
+            COCONUT_TREE_KEY, COCONUT_TREE_PLACED_KEY);
     public static final TreeCrop DATE = new TreeCrop(ItemNamesV2.DATE, true, Blocks.JUNGLE_LOG, Blocks.JUNGLE_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 5, 8, 0,
-            ConfiguredFeatureKeys.DATE_TREE_KEY, PlacedFeatureKeys.DATE_TREE_PLACED_KEY);
+            DATE_TREE_KEY, DATE_TREE_PLACED_KEY);
     public static final TreeCrop DRAGONFRUIT = new TreeCrop(ItemNamesV2.DRAGONFRUIT, true, Blocks.JUNGLE_LOG, Blocks.OAK_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 5, 7, 0,
-            ConfiguredFeatureKeys.DRAGON_FRUIT_TREE_KEY, PlacedFeatureKeys.DRAGONFRUIT_TREE_PLACED_KEY);
+            DRAGON_FRUIT_TREE_KEY, DRAGONFRUIT_TREE_PLACED_KEY);
     public static final TreeCrop FIG = new TreeCrop(ItemNamesV2.FIG, true, Blocks.JUNGLE_LOG, Blocks.JUNGLE_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 4, 8, 0,
-            ConfiguredFeatureKeys.FIG_TREE_KEY, PlacedFeatureKeys.FIG_TREE_PLACED_KEY);
+            FIG_TREE_KEY, FIG_TREE_PLACED_KEY);
     public static final TreeCrop GRAPEFRUIT = new TreeCrop(ItemNamesV2.GRAPEFRUIT, true, Blocks.JUNGLE_LOG, Blocks.JUNGLE_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 4, 8, 0,
-            ConfiguredFeatureKeys.GRAPEFRUIT_TREE_KEY, PlacedFeatureKeys.GRAPEFRUIT_TREE_PLACED_KEY);
+            GRAPEFRUIT_TREE_KEY, GRAPEFRUIT_TREE_PLACED_KEY);
     public static final TreeCrop KUMQUAT = new TreeCrop(ItemNamesV2.KUMQUAT, true, Blocks.JUNGLE_LOG, Blocks.JUNGLE_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 4, 8, 0,
-            ConfiguredFeatureKeys.KUMQUAT_TREE_KEY, PlacedFeatureKeys.KUMQUAT_TREE_PLACED_KEY);
+            KUMQUAT_TREE_KEY, KUMQUAT_TREE_PLACED_KEY);
     public static final TreeCrop LEMON = new TreeCrop(ItemNamesV2.LEMON, true, Blocks.OAK_LOG, Blocks.OAK_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 5, 3, 0,
-            ConfiguredFeatureKeys.LEMON_TREE_KEY, PlacedFeatureKeys.LEMON_TREE_PLACED_KEY);
+            LEMON_TREE_KEY, LEMON_TREE_PLACED_KEY);
     public static final TreeCrop LIME = new TreeCrop(ItemNamesV2.LIME, true, Blocks.OAK_LOG, Blocks.OAK_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 5, 2, 0,
-            ConfiguredFeatureKeys.LIME_TREE_KEY, PlacedFeatureKeys.LIME_TREE_PLACED_KEY);
+            LIME_TREE_KEY, LIME_TREE_PLACED_KEY);
     public static final TreeCrop MANGO = new TreeCrop(ItemNamesV2.MANGO, true, Blocks.JUNGLE_LOG, Blocks.JUNGLE_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 5, 8, 0,
-            ConfiguredFeatureKeys.MANGO_TREE_KEY, PlacedFeatureKeys.MANGO_TREE_PLACED_KEY);
+            MANGO_TREE_KEY, MANGO_TREE_PLACED_KEY);
     public static final TreeCrop NECTARINE = new TreeCrop(ItemNamesV2.NECTARINE, true, Blocks.OAK_LOG, Blocks.OAK_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 4, 4, 0,
-            ConfiguredFeatureKeys.NECTARINE_TREE_KEY, PlacedFeatureKeys.NECTARINE_TREE_PLACED_KEY);
+            NECTARINE_TREE_KEY, NECTARINE_TREE_PLACED_KEY);
     public static final TreeCrop NUTMEG = new TreeCrop(ItemNamesV2.NUTMEG, true, Blocks.JUNGLE_LOG, Blocks.JUNGLE_LEAVES, TagCategory.CROPS, RAW_CROP_2, 4, 8, 0,
-            ConfiguredFeatureKeys.NUTMEG_TREE_KEY, PlacedFeatureKeys.NUTMEG_TREE_PLACED_KEY);
+            NUTMEG_TREE_KEY, NUTMEG_TREE_PLACED_KEY);
     public static final TreeCrop ORANGE = new TreeCrop(ItemNamesV2.ORANGE, true, Blocks.OAK_LOG, Blocks.OAK_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 4, 4, 0,
-            ConfiguredFeatureKeys.ORANGE_TREE_KEY, PlacedFeatureKeys.ORANGE_TREE_PLACED_KEY);
+            ORANGE_TREE_KEY, ORANGE_TREE_PLACED_KEY);
     public static final TreeCrop PEACH = new TreeCrop(ItemNamesV2.PEACH, true, Blocks.OAK_LOG, Blocks.OAK_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 5, 3, 0,
-            ConfiguredFeatureKeys.PEACH_TREE_KEY, PlacedFeatureKeys.PEACH_TREE_PLACED_KEY);
+            PEACH_TREE_KEY, PEACH_TREE_PLACED_KEY);
     public static final TreeCrop PEAR = new TreeCrop(ItemNamesV2.PEAR, true, Blocks.OAK_LOG, Blocks.OAK_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 5, 2, 0,
-            ConfiguredFeatureKeys.PEAR_TREE_KEY, PlacedFeatureKeys.PEAR_TREE_PLACED_KEY);
+            PEAR_TREE_KEY, PEAR_TREE_PLACED_KEY);
     public static final TreeCrop PECAN = new TreeCrop(ItemNamesV2.PECAN, true, Blocks.DARK_OAK_LOG, Blocks.DARK_OAK_LEAVES, TagCategory.NUTS, RAW_CROP_2, 4, 3, 0,
-            ConfiguredFeatureKeys.PECAN_TREE_KEY, PlacedFeatureKeys.PECAN_TREE_PLACED_KEY);
+            PECAN_TREE_KEY, PECAN_TREE_PLACED_KEY);
     public static final TreeCrop PERSIMMON = new TreeCrop(ItemNamesV2.PERSIMMON, true, Blocks.OAK_LOG, Blocks.OAK_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 5, 3, 0,
-            ConfiguredFeatureKeys.PERSIMMON_TREE_KEY, PlacedFeatureKeys.PERSIMMON_TREE_PLACED_KEY);
+            PERSIMMON_TREE_KEY, PERSIMMON_TREE_PLACED_KEY);
     public static final TreeCrop PLUM = new TreeCrop(ItemNamesV2.PLUM, true, Blocks.OAK_LOG, Blocks.OAK_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 5, 3, 0,
-            ConfiguredFeatureKeys.PLUM_TREE_KEY, PlacedFeatureKeys.PLUM_TREE_PLACED_KEY);
+            PLUM_TREE_KEY, PLUM_TREE_PLACED_KEY);
     public static final TreeCrop STARFRUIT = new TreeCrop(ItemNamesV2.STARFRUIT, true, Blocks.OAK_LOG, Blocks.OAK_LEAVES, TagCategory.FRUITS, RAW_CROP_2, 5, 3, 0,
-            ConfiguredFeatureKeys.STAR_FRUIT_TREE_KEY, PlacedFeatureKeys.STARFRUIT_TREE_PLACED_KEY);
+            STAR_FRUIT_TREE_KEY, STARFRUIT_TREE_PLACED_KEY);
     public static final TreeCrop WALNUT = new TreeCrop(ItemNamesV2.WALNUT, true, Blocks.DARK_OAK_LOG, Blocks.DARK_OAK_LEAVES, TagCategory.NUTS, RAW_CROP_2, 4, 3, 0,
-            ConfiguredFeatureKeys.WALNUT_TREE_KEY, PlacedFeatureKeys.WALNUT_TREE_PLACED_KEY);
+            WALNUT_TREE_KEY, WALNUT_TREE_PLACED_KEY);
 
-    public static final Tree CINNAMON = new Tree(ItemNamesV2.CINNAMON, false, TagCategory.CROPS, 4, 3, 0, ConfiguredFeatureKeys.CINNAMON_TREE_KEY, PlacedFeatureKeys.CINNAMON_TREE_PLACED_KEY);
+    public static final Tree CINNAMON = new Tree(ItemNamesV2.CINNAMON, false, TagCategory.CROPS, 4, 3, 0, CINNAMON_TREE_KEY, CINNAMON_TREE_PLACED_KEY);
 
     public static final Seafood ANCHOVY = new Seafood(ItemNamesV2.ANCHOVY, true, RAW_MEAT_1);
     public static final Seafood CALAMARI = new Seafood(ItemNamesV2.CALAMARI, false, RAW_MEAT_1);
@@ -484,7 +484,6 @@ public class Content {
     public static final FarmlandCrop FLAX;*/
 
 
-
     public static Block SALT_ORE_BLOCK;
     public static Item SALT_ORE;
 
@@ -495,7 +494,7 @@ public class Content {
             entry.accept(register);
         }
 
-        SALT_ORE_BLOCK = register.register(createIdentifier(BlockNames.SALT_ORE), () ->new Block(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).strength(0.5F).sound(SoundType.SAND)));
+        SALT_ORE_BLOCK = register.register(createIdentifier(BlockNames.SALT_ORE), () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).strength(0.5F).sound(SoundType.SAND)));
     }
 
 
@@ -691,7 +690,7 @@ public class Content {
         THE_BIG_BREAKFAST = register.register(createIdentifier(ItemNamesV2.THE_BIG_BREAKFAST), () -> new ReferenceItem(createGroup().food(FoodConstructor.createFood(REG_20)),
                 Component.literal("Patricia! Daddy want the Big Breakfast").setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY))));
 
-        SALT_ORE = register.register(createIdentifier(ItemNamesV2.SALT_ORE), () ->  new ItemNameBlockItem(SALT_ORE_BLOCK, createGroup()));
+        SALT_ORE = register.register(createIdentifier(ItemNamesV2.SALT_ORE), () -> new ItemNameBlockItem(SALT_ORE_BLOCK, createGroup()));
     }
 
     public static Stream<Item> createCropStream() {

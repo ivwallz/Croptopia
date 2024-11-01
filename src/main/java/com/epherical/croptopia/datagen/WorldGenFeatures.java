@@ -110,7 +110,7 @@ public class WorldGenFeatures {
     public static final ConfiguredFeature<RandomPatchConfiguration, ?> RANDOM_CROP = register(Feature.RANDOM_PATCH,
             FeatureUtils.simpleRandomPatchConfiguration(6, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK, config)));
 
-    public static final Holder<PlacedFeature> RANDOM_CROP_PLACED = register(PlacedFeatureKeys.RANDOM_CROP_KEY, RANDOM_CROP,
+    public static final Holder<PlacedFeature> RANDOM_CROP_PLACED = register(PlacedFeatureKeys.ARTICHOKE_CROP_PLACED_KEY, RANDOM_CROP,
             CountPlacement.of(3),
             InSquarePlacement.spread(),
             BiomeFilter.biome(),
