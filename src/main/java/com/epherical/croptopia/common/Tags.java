@@ -100,6 +100,8 @@ public class Tags {
     public static final TagKey<Biome> HAS_WALNUT = create("has_tree/" + ItemNamesV2.WALNUT);
     public static final TagKey<Biome> HAS_CINNAMON = create("has_tree/" + ItemNamesV2.CINNAMON);
 
+    public static final TagKey<Biome> HAS_SALT = create("has_salt/" + ItemNamesV2.SALT);
+
 
     private static TagKey<Biome> create(String key) {
         TagKey<Biome> biomeKey = TagKey.create(Registries.BIOME, CroptopiaMod.createIdentifier(key));

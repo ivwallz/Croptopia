@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-07T20:29:22.3464981	Tags for minecraft:worldgen/biome mod id croptopia
+// 1.21.1	2024-10-31T23:00:15.4945596	Tags for minecraft:worldgen/biome mod id croptopia
 55a701ca911e433b6cbdd163a1fcfcc223b08a87 data/croptopia/tags/worldgen/biome/has_crop/artichoke.json
 6af52db77fff467d50f79f6d3fb4563aa3888c6a data/croptopia/tags/worldgen/biome/has_crop/asparagus.json
 a7d2e819a435353ed8a01ebc2a5fa3e5e13fafb4 data/croptopia/tags/worldgen/biome/has_crop/barley.json
@@ -57,6 +57,7 @@ d82fa5e5bc756851f3120df06ade0af915dc3564 data/croptopia/tags/worldgen/biome/has_
 f3ff228bd15e4e1ccbf77ee1481a32e2547b2736 data/croptopia/tags/worldgen/biome/has_crop/vanilla.json
 6490091abf0860404decd4958317bbc1105ab01e data/croptopia/tags/worldgen/biome/has_crop/yam.json
 347870ce9097bbdfbcf2f9cd40679bf35214196f data/croptopia/tags/worldgen/biome/has_crop/zucchini.json
+c093fd2c5bb441049ca6743d6e59e58b23e1fa28 data/croptopia/tags/worldgen/biome/has_salt/salt.json
 5c92ee00aee76e8885076aa7c9acbef4d90a1774 data/croptopia/tags/worldgen/biome/has_tree/almond.json
 52e11935f9237076fb5de97d3d64ee67af4e5d73 data/croptopia/tags/worldgen/biome/has_tree/apple.json
 56f1d81c68c1738c087ddfc6c33e6cc8d1ff4e20 data/croptopia/tags/worldgen/biome/has_tree/apricot.json

@@ -10,6 +10,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.world.BiomeModifier;
 import net.neoforged.neoforge.common.world.BiomeModifiers;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
@@ -47,6 +48,70 @@ public class CroptopiaWorldBiomeSelection {
     public static final ResourceKey<BiomeModifier> ADD_WALNUT_TREE_TO_BIOMES = createKey("add_walnut_tree_to_biomes");
     public static final ResourceKey<BiomeModifier> ADD_CINNAMON_TREE_TO_BIOMES = createKey("add_cinnamon_tree_to_biomes");
 
+    public static final ResourceKey<BiomeModifier> ADD_ARTICHOKE_CROP_TO_BIOMES = createKey("add_artichoke_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_ASPARAGUS_CROP_TO_BIOMES = createKey("add_asparagus_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_BARLEY_CROP_TO_BIOMES = createKey("add_barley_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_BASIL_CROP_TO_BIOMES = createKey("add_basil_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_BELLPEPPER_CROP_TO_BIOMES = createKey("add_bellpepper_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_BLACKBEAN_CROP_TO_BIOMES = createKey("add_blackbean_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_BLACKBERRY_CROP_TO_BIOMES = createKey("add_blackberry_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_BLUEBERRY_CROP_TO_BIOMES = createKey("add_blueberry_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_BROCCOLI_CROP_TO_BIOMES = createKey("add_broccoli_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_CABBAGE_CROP_TO_BIOMES = createKey("add_cabbage_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_CANTALOUPE_CROP_TO_BIOMES = createKey("add_cantaloupe_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_CAULIFLOWER_CROP_TO_BIOMES = createKey("add_cauliflower_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_CELERY_CROP_TO_BIOMES = createKey("add_celery_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_CHILE_PEPPER_CROP_TO_BIOMES = createKey("add_chile_pepper_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_COFFEE_BEANS_CROP_TO_BIOMES = createKey("add_coffee_beans_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_CORN_CROP_TO_BIOMES = createKey("add_corn_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_CRANBERRY_CROP_TO_BIOMES = createKey("add_cranberry_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_CUCUMBER_CROP_TO_BIOMES = createKey("add_cucumber_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_CURRANT_CROP_TO_BIOMES = createKey("add_currant_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_EGGPLANT_CROP_TO_BIOMES = createKey("add_eggplant_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_ELDERBERRY_CROP_TO_BIOMES = createKey("add_elderberry_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_GARLIC_CROP_TO_BIOMES = createKey("add_garlic_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_GINGER_CROP_TO_BIOMES = createKey("add_ginger_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_GRAPE_CROP_TO_BIOMES = createKey("add_grape_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_GREENBEAN_CROP_TO_BIOMES = createKey("add_greenbean_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_GREENONION_CROP_TO_BIOMES = createKey("add_greenonion_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_HONEYDEW_CROP_TO_BIOMES = createKey("add_honeydew_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_HOPS_CROP_TO_BIOMES = createKey("add_hops_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_KALE_CROP_TO_BIOMES = createKey("add_kale_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_KIWI_CROP_TO_BIOMES = createKey("add_kiwi_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_LEEK_CROP_TO_BIOMES = createKey("add_leek_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_LETTUCE_CROP_TO_BIOMES = createKey("add_lettuce_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_MUSTARD_CROP_TO_BIOMES = createKey("add_mustard_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_OAT_CROP_TO_BIOMES = createKey("add_oat_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_OLIVE_CROP_TO_BIOMES = createKey("add_olive_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_ONION_CROP_TO_BIOMES = createKey("add_onion_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_PEANUT_CROP_TO_BIOMES = createKey("add_peanut_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_PEPPER_CROP_TO_BIOMES = createKey("add_pepper_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_PINEAPPLE_CROP_TO_BIOMES = createKey("add_pineapple_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_RADISH_CROP_TO_BIOMES = createKey("add_radish_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_RASPBERRY_CROP_TO_BIOMES = createKey("add_raspberry_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_RHUBARB_CROP_TO_BIOMES = createKey("add_rhubarb_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_RICE_CROP_TO_BIOMES = createKey("add_rice_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_RUTABAGA_CROP_TO_BIOMES = createKey("add_rutabaga_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_SAGUARO_CROP_TO_BIOMES = createKey("add_saguaro_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_SOYBEAN_CROP_TO_BIOMES = createKey("add_soybean_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_SPINACH_CROP_TO_BIOMES = createKey("add_spinach_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_SQUASH_CROP_TO_BIOMES = createKey("add_squash_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_STRAWBERRY_CROP_TO_BIOMES = createKey("add_strawberry_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_SWEETPOTATO_CROP_TO_BIOMES = createKey("add_sweetpotato_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_TEA_LEAVES_CROP_TO_BIOMES = createKey("add_tea_leaves_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_TOMATILLO_CROP_TO_BIOMES = createKey("add_tomatillo_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_TOMATO_CROP_TO_BIOMES = createKey("add_tomato_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_TURMERIC_CROP_TO_BIOMES = createKey("add_turmeric_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_TURNIP_CROP_TO_BIOMES = createKey("add_turnip_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_VANILLA_CROP_TO_BIOMES = createKey("add_vanilla_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_YAM_CROP_TO_BIOMES = createKey("add_yam_crop_to_biomes");
+    public static final ResourceKey<BiomeModifier> ADD_ZUCCHINI_CROP_TO_BIOMES = createKey("add_zucchini_crop_to_biomes");
+
+
+    public static final ResourceKey<BiomeModifier> ADD_SALT_TO_BIOMES = createKey("add_salt_to_biomes");
+
+
+
 
     public CroptopiaWorldBiomeSelection(BootstrapContext<BiomeModifier> context) {
         HolderGetter<Biome> biomes = context.lookup(Registries.BIOME);
@@ -80,6 +145,67 @@ public class CroptopiaWorldBiomeSelection {
         new BiomeMod(context, biomes, placedFeatures, CINNAMON_TREE_PLACED_KEY, ADD_CINNAMON_TREE_TO_BIOMES, HAS_CINNAMON);
 
 
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_ARTICHOKE_CROP_TO_BIOMES, HAS_ARTICHOKE);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_ASPARAGUS_CROP_TO_BIOMES, HAS_ASPARAGUS);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_BARLEY_CROP_TO_BIOMES, HAS_BARLEY);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_BASIL_CROP_TO_BIOMES, HAS_BASIL);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_BELLPEPPER_CROP_TO_BIOMES, HAS_BELLPEPPER);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_BLACKBEAN_CROP_TO_BIOMES, HAS_BLACKBEAN);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_BLACKBERRY_CROP_TO_BIOMES, HAS_BLACKBERRY);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_BLUEBERRY_CROP_TO_BIOMES, HAS_BLUEBERRY);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_BROCCOLI_CROP_TO_BIOMES, HAS_BROCCOLI);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_CABBAGE_CROP_TO_BIOMES, HAS_CABBAGE);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_CANTALOUPE_CROP_TO_BIOMES, HAS_CANTALOUPE);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_CAULIFLOWER_CROP_TO_BIOMES, HAS_CAULIFLOWER);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_CELERY_CROP_TO_BIOMES, HAS_CELERY);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_CHILE_PEPPER_CROP_TO_BIOMES, HAS_CHILE_PEPPER);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_COFFEE_BEANS_CROP_TO_BIOMES, HAS_COFFEE_BEANS);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_CORN_CROP_TO_BIOMES, HAS_CORN);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_CRANBERRY_CROP_TO_BIOMES, HAS_CRANBERRY);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_CUCUMBER_CROP_TO_BIOMES, HAS_CUCUMBER);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_CURRANT_CROP_TO_BIOMES, HAS_CURRANT);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_EGGPLANT_CROP_TO_BIOMES, HAS_EGGPLANT);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_ELDERBERRY_CROP_TO_BIOMES, HAS_ELDERBERRY);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_GARLIC_CROP_TO_BIOMES, HAS_GARLIC);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_GINGER_CROP_TO_BIOMES, HAS_GINGER);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_GRAPE_CROP_TO_BIOMES, HAS_GRAPE);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_GREENBEAN_CROP_TO_BIOMES, HAS_GREENBEAN);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_GREENONION_CROP_TO_BIOMES, HAS_GREENONION);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_HONEYDEW_CROP_TO_BIOMES, HAS_HONEYDEW);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_HOPS_CROP_TO_BIOMES, HAS_HOPS);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_KALE_CROP_TO_BIOMES, HAS_KALE);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_KIWI_CROP_TO_BIOMES, HAS_KIWI);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_LEEK_CROP_TO_BIOMES, HAS_LEEK);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_LETTUCE_CROP_TO_BIOMES, HAS_LETTUCE);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_MUSTARD_CROP_TO_BIOMES, HAS_MUSTARD);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_OAT_CROP_TO_BIOMES, HAS_OAT);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_OLIVE_CROP_TO_BIOMES, HAS_OLIVE);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_ONION_CROP_TO_BIOMES, HAS_ONION);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_PEANUT_CROP_TO_BIOMES, HAS_PEANUT);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_PEPPER_CROP_TO_BIOMES, HAS_PEPPER);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_PINEAPPLE_CROP_TO_BIOMES, HAS_PINEAPPLE);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_RADISH_CROP_TO_BIOMES, HAS_RADISH);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_RASPBERRY_CROP_TO_BIOMES, HAS_RASPBERRY);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_RHUBARB_CROP_TO_BIOMES, HAS_RHUBARB);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_RICE_CROP_TO_BIOMES, HAS_RICE);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_RUTABAGA_CROP_TO_BIOMES, HAS_RUTABAGA);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_SAGUARO_CROP_TO_BIOMES, HAS_SAGUARO);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_SOYBEAN_CROP_TO_BIOMES, HAS_SOYBEAN);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_SPINACH_CROP_TO_BIOMES, HAS_SPINACH);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_SQUASH_CROP_TO_BIOMES, HAS_SQUASH);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_STRAWBERRY_CROP_TO_BIOMES, HAS_STRAWBERRY);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_SWEETPOTATO_CROP_TO_BIOMES, HAS_SWEETPOTATO);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_TEA_LEAVES_CROP_TO_BIOMES, HAS_TEA_LEAVES);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_TOMATILLO_CROP_TO_BIOMES, HAS_TOMATILLO);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_TOMATO_CROP_TO_BIOMES, HAS_TOMATO);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_TURMERIC_CROP_TO_BIOMES, HAS_TURMERIC);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_TURNIP_CROP_TO_BIOMES, HAS_TURNIP);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_VANILLA_CROP_TO_BIOMES, HAS_VANILLA);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_YAM_CROP_TO_BIOMES, HAS_YAM);
+        new BiomeMod(context, biomes, placedFeatures, RANDOM_CROP_KEY, ADD_ZUCCHINI_CROP_TO_BIOMES, HAS_ZUCCHINI);
+
+
+        new BiomeMod(context, biomes, placedFeatures, DISK_SALT_PLACED_KEY, ADD_SALT_TO_BIOMES, HAS_SALT);
 
 
     }

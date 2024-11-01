@@ -6,6 +6,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.biome.Biome;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 import javax.annotation.Nullable;
@@ -29,6 +30,13 @@ public class CroptopiaBiomeTagProvider extends TagsProvider<Biome> {
     protected void addTags(HolderLookup.Provider provider) {
         addCrops(provider);
         addTrees(provider);
+
+        tag(HAS_SALT)
+                .addTag(Tags.Biomes.IS_RIVER)
+                .addTag(Tags.Biomes.IS_OCEAN)
+                .addTag(Tags.Biomes.IS_DEEP_OCEAN)
+                .addTag(Tags.Biomes.IS_SHALLOW_OCEAN);
+
 
     }
 
