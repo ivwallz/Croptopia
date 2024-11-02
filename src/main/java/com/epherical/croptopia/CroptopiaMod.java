@@ -223,8 +223,11 @@ public class CroptopiaMod {
             CroptopiaBlockTagProvider blockProvider = generator.addProvider(event.includeServer(),
                     new CroptopiaBlockTagProvider(output, Registries.BLOCK, lookupProvider, helper));
 
+            generator.addProvider(event.includeServer(), new CroptopiaLootTableProvider.GlobalLootProvider(output, lookupProvider));
+
             LootTableProvider.SubProviderEntry blocks = new LootTableProvider.SubProviderEntry(CroptopiaLootTableProvider::new, LootContextParamSets.BLOCK);
-            LootTableProvider lootProvider = new LootTableProvider(output, Collections.emptySet(), List.of(blocks), lookupProvider);
+            LootTableProvider.SubProviderEntry chests = new LootTableProvider.SubProviderEntry(CroptopiaLootTableProvider.ChestLoot::new, LootContextParamSets.CHEST);
+            LootTableProvider lootProvider = new LootTableProvider(output, Collections.emptySet(), List.of(blocks, chests), lookupProvider);
 
             generator.addProvider(event.includeServer(), lootProvider);
 

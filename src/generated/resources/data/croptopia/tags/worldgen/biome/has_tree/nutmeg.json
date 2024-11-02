@@ -3,11 +3,15 @@
     "minecraft:sparse_jungle",
     "minecraft:jungle",
     {
-      "id": "byg:tropical_rainforest",
+      "id": "biomesoplenty:bog",
       "required": false
     },
     {
-      "id": "byg:tropical_islands",
+      "id": "biomeswevegone:tropical_rainforest",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:tropical_islands",
       "required": false
     },
     {
@@ -15,7 +19,7 @@
       "required": false
     },
     {
-      "id": "byg:crag_gardens",
+      "id": "biomeswevegone:crag_gardens",
       "required": false
     },
     {

@@ -2,27 +2,27 @@
   "values": [
     "minecraft:desert",
     {
-      "id": "byg:atacama_desert",
+      "id": "biomeswevegone:atacama_desert",
       "required": false
     },
     {
-      "id": "byg:windswept_dunes",
+      "id": "biomeswevegone:windswept_dunes",
       "required": false
     },
     {
-      "id": "byg:windswept_desert",
+      "id": "biomeswevegone:windswept_desert",
       "required": false
     },
     {
-      "id": "byg:mojave_desert",
+      "id": "biomeswevegone:mojave_desert",
       "required": false
     },
     {
-      "id": "byg:red_rock_valley",
+      "id": "biomeswevegone:red_rock_valley",
       "required": false
     },
     {
-      "id": "byg:firecracker_shrubland",
+      "id": "biomeswevegone:firecracker_shrubland",
       "required": false
     },
     {

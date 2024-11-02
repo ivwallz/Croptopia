@@ -2,11 +2,11 @@
   "values": [
     "minecraft:swamp",
     {
-      "id": "byg:cypress_swamplands",
+      "id": "biomeswevegone:cypress_swamplands",
       "required": false
     },
     {
-      "id": "byg:white_mangrove_marshes",
+      "id": "biomeswevegone:white_mangrove_marshes",
       "required": false
     },
     {

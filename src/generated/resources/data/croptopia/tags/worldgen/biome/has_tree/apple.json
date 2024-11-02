@@ -3,7 +3,15 @@
     "minecraft:plains",
     "minecraft:sunflower_plains",
     {
-      "id": "byg:prairie",
+      "id": "biomesoplenty:jacaranda_glade",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:orchard",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:prairie",
       "required": false
     },
     {

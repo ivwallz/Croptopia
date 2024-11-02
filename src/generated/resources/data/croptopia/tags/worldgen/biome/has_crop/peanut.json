@@ -4,19 +4,19 @@
     "minecraft:sparse_jungle",
     "minecraft:bamboo_jungle",
     {
-      "id": "byg:crag_gardens",
+      "id": "biomeswevegone:crag_gardens",
       "required": false
     },
     {
-      "id": "byg:guiana_shield",
+      "id": "biomeswevegone:guiana_shield",
       "required": false
     },
     {
-      "id": "byg:jacaranda_forest",
+      "id": "biomeswevegone:jacaranda_forest",
       "required": false
     },
     {
-      "id": "byg:tropical_rainforest",
+      "id": "biomeswevegone:tropical_rainforest",
       "required": false
     },
     {

@@ -3,6 +3,14 @@
     "minecraft:plains",
     "minecraft:sunflower_plains",
     {
+      "id": "biomesoplenty:orchard",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:jacaranda_glade",
+      "required": false
+    },
+    {
       "id": "terralith:blooming_valley",
       "required": false
     },

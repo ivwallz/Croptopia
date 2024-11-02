@@ -561,7 +561,12 @@ public class Content {
         PEANUT_BUTTER_AND_JAM = register.register(createIdentifier(ItemNamesV2.PEANUT_BUTTER_AND_JAM), () -> new Item(createGroup().food(FoodConstructor.createFood(REG_10))));
         BLT = register.register(createIdentifier(ItemNamesV2.BLT), () -> new Item(createGroup().food(FoodConstructor.createFood(REG_10))));
         GRILLED_CHEESE = register.register(createIdentifier(ItemNamesV2.GRILLED_CHEESE), () -> new Item(createGroup().food(FoodConstructor.createFood(REG_7))));
-        TUNA_SANDWICH = register.register(createIdentifier(ItemNamesV2.TUNA_SANDWICH), () -> new Item(createGroup().food(FoodConstructor.createFood(REG_10))));
+        TUNA_SANDWICH = register.register(createIdentifier(ItemNamesV2.TUNA_SANDWICH), () -> new ReferenceItem(createGroup().food(FoodConstructor.createFood(REG_10)),
+                Component.literal("A lost cuisine of legends past.").setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY)),
+                Component.literal("\"I waited years, for this!?!\"").setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY)),
+                Component.literal("Finally! a moldy sandwich inside of a decrepit dungeon, if only I could craft it...").setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY)),
+                Component.literal("An ancient food, unknown to the world in how to make.").setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY)),
+                Component.literal("A lost cuisine of legends past.").setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY))));
         CHEESEBURGER = register.register(createIdentifier(ItemNamesV2.CHEESEBURGER), () -> new Item(createGroup().food(FoodConstructor.createFood(REG_10))));
         HAMBURGER = register.register(createIdentifier(ItemNamesV2.HAMBURGER), () -> new Item(createGroup().food(FoodConstructor.createFood(REG_10))));
         TOFUBURGER = register.register(createIdentifier(ItemNamesV2.TOFUBURGER), () -> new Item(createGroup().food(FoodConstructor.createFood(REG_10))));

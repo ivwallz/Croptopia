@@ -8,39 +8,39 @@
     "minecraft:savanna_plateau",
     "minecraft:windswept_savanna",
     {
-      "id": "byg:araucaria_savanna",
+      "id": "biomeswevegone:araucaria_savanna",
       "required": false
     },
     {
-      "id": "byg:baobab_savanna",
+      "id": "biomeswevegone:baobab_savanna",
       "required": false
     },
     {
-      "id": "byg:black_forest",
+      "id": "biomeswevegone:black_forest",
       "required": false
     },
     {
-      "id": "byg:coniferous_forest",
+      "id": "biomeswevegone:coniferous_forest",
       "required": false
     },
     {
-      "id": "byg:maple_taiga",
+      "id": "biomeswevegone:maple_taiga",
       "required": false
     },
     {
-      "id": "byg:autumnal_taiga",
+      "id": "biomeswevegone:autumnal_taiga",
       "required": false
     },
     {
-      "id": "byg:frosted_taiga",
+      "id": "biomeswevegone:frosted_taiga",
       "required": false
     },
     {
-      "id": "byg:frosted_coniferous_forest",
+      "id": "biomeswevegone:frosted_coniferous_forest",
       "required": false
     },
     {
-      "id": "byg:zelkova_forest",
+      "id": "biomeswevegone:zelkova_forest",
       "required": false
     },
     {

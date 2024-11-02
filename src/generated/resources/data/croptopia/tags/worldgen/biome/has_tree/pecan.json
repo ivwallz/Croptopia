@@ -2,23 +2,27 @@
   "values": [
     "minecraft:dark_forest",
     {
-      "id": "byg:weeping_witch_forest",
+      "id": "biomesoplenty:seasonal_forest",
       "required": false
     },
     {
-      "id": "byg:dacite_ridges",
+      "id": "biomeswevegone:weeping_witch_forest",
       "required": false
     },
     {
-      "id": "byg:ebony_woods",
+      "id": "biomeswevegone:dacite_ridges",
       "required": false
     },
     {
-      "id": "byg:maple_taiga",
+      "id": "biomeswevegone:ebony_woods",
       "required": false
     },
     {
-      "id": "byg:twilight_meadow",
+      "id": "biomeswevegone:maple_taiga",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:twilight_meadow",
       "required": false
     },
     {

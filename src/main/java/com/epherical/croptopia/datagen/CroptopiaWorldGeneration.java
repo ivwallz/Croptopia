@@ -18,11 +18,12 @@ import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConf
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.stateproviders.SimpleStateProvider;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
-import net.minecraft.world.level.levelgen.placement.CountPlacement;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.NoiseThresholdCountPlacement;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.placement.PlacementModifier;
+import net.minecraft.world.level.levelgen.placement.RarityFilter;
+import net.neoforged.neoforge.common.loot.AddTableLootModifier;
 
 import java.util.List;
 
@@ -56,11 +57,12 @@ public class CroptopiaWorldGeneration {
     }
 
     private List<PlacementModifier> modifiers() {
-        return List.of(CountPlacement.of(3),
+        return List.of(
+                NoiseThresholdCountPlacement.of(-0.7, 0, 8),
+                RarityFilter.onAverageOnceEvery(5),
                 InSquarePlacement.spread(),
-                BiomeFilter.biome(),
-                NoiseThresholdCountPlacement.of(-0.8, 5, 10),
-                PlacementUtils.HEIGHTMAP_WORLD_SURFACE);
+                PlacementUtils.HEIGHTMAP,
+                BiomeFilter.biome());
     }
 
     private SimpleBlockConfiguration createCropConfiguration(Block block) {

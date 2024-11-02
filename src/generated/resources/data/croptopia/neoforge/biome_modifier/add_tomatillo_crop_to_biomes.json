@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
   "biomes": "#croptopia:has_crop/tomatillo",
-  "features": "croptopia:turmeric_crop_placed",
+  "features": "croptopia:tomatillo_crop_placed",
   "step": "vegetal_decoration"
 }

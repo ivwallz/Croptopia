@@ -4,15 +4,19 @@
     "minecraft:forest",
     "minecraft:windswept_forest",
     {
-      "id": "byg:orchard",
+      "id": "biomesoplenty:orchard",
       "required": false
     },
     {
-      "id": "byg:aspen_forest",
+      "id": "biomeswevegone:orchard",
       "required": false
     },
     {
-      "id": "byg:red_oak_forest",
+      "id": "biomeswevegone:aspen_forest",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:red_oak_forest",
       "required": false
     },
     {

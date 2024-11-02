@@ -3,27 +3,35 @@
     "minecraft:sparse_jungle",
     "minecraft:jungle",
     {
-      "id": "byg:white_mangrove_marshes",
+      "id": "biomesoplenty:rainforest",
       "required": false
     },
     {
-      "id": "byg:tropical_rainforest",
+      "id": "biomesoplenty:tropics",
       "required": false
     },
     {
-      "id": "byg:temperate_rainforest",
+      "id": "biomeswevegone:white_mangrove_marshes",
       "required": false
     },
     {
-      "id": "byg:cypress_swamplands",
+      "id": "biomeswevegone:tropical_rainforest",
       "required": false
     },
     {
-      "id": "byg:tropical_islands",
+      "id": "biomeswevegone:temperate_rainforest",
       "required": false
     },
     {
-      "id": "byg:crag_gardens",
+      "id": "biomeswevegone:cypress_swamplands",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:tropical_islands",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:crag_gardens",
       "required": false
     },
     {

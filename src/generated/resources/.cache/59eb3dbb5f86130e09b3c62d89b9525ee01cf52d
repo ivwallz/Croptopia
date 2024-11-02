@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-30T23:06:45.6292059	Loot Tables
+// 1.21.1	2024-11-01T23:38:49.3902919	Loot Tables
 2bf75c0eefd157381ebe38b3b37020414e2001bd data/croptopia/loot_table/blocks/almond_crop.json
 8e42a1453e5e83bbe99d3ba599a3ef4f9172bba6 data/croptopia/loot_table/blocks/almond_sapling.json
 a40b8ac726589de463c03b44963cfb3dfb965828 data/croptopia/loot_table/blocks/apple_crop.json
@@ -116,3 +116,4 @@ afaa0c3e5e48857bd91086d476f11b29294ea2d3 data/croptopia/loot_table/blocks/sweetp
 6eaaee0178f298b61ba7f82c6863d2ae80696cf1 data/croptopia/loot_table/blocks/walnut_sapling.json
 008a172228de3ef9b38d49324897f47362fe482b data/croptopia/loot_table/blocks/yam_crop.json
 bb4a3eb52b65789877f6091f464465fe875715d0 data/croptopia/loot_table/blocks/zucchini_crop.json
+5b71f4f1a1a2db0a7335f2f51e9a35f219d6bc8b data/croptopia/loot_table/chests/tuna_loot.json

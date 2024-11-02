@@ -11,83 +11,83 @@
     "minecraft:snowy_taiga",
     "minecraft:grove",
     {
-      "id": "byg:aspen_forest",
+      "id": "biomeswevegone:aspen_forest",
       "required": false
     },
     {
-      "id": "byg:black_forest",
+      "id": "biomeswevegone:black_forest",
       "required": false
     },
     {
-      "id": "byg:borealis_grove",
+      "id": "biomeswevegone:borealis_grove",
       "required": false
     },
     {
-      "id": "byg:cherry_blossom_forest",
+      "id": "biomeswevegone:cherry_blossom_forest",
       "required": false
     },
     {
-      "id": "byg:cika_woods",
+      "id": "biomeswevegone:cika_woods",
       "required": false
     },
     {
-      "id": "byg:coniferous_forest",
+      "id": "biomeswevegone:coniferous_forest",
       "required": false
     },
     {
-      "id": "byg:ebony_woods",
+      "id": "biomeswevegone:ebony_woods",
       "required": false
     },
     {
-      "id": "byg:forgotten_forest",
+      "id": "biomeswevegone:forgotten_forest",
       "required": false
     },
     {
-      "id": "byg:maple_taiga",
+      "id": "biomeswevegone:maple_taiga",
       "required": false
     },
     {
-      "id": "byg:red_oak_forest",
+      "id": "biomeswevegone:red_oak_forest",
       "required": false
     },
     {
-      "id": "byg:autumnal_forest",
+      "id": "biomeswevegone:autumnal_forest",
       "required": false
     },
     {
-      "id": "byg:autumnal_taiga",
+      "id": "biomeswevegone:autumnal_taiga",
       "required": false
     },
     {
-      "id": "byg:redwood_thicket",
+      "id": "biomeswevegone:redwood_thicket",
       "required": false
     },
     {
-      "id": "byg:frosted_taiga",
+      "id": "biomeswevegone:frosted_taiga",
       "required": false
     },
     {
-      "id": "byg:frosted_coniferous_forest",
+      "id": "biomeswevegone:frosted_coniferous_forest",
       "required": false
     },
     {
-      "id": "byg:fragment_forest",
+      "id": "biomeswevegone:fragment_forest",
       "required": false
     },
     {
-      "id": "byg:twilight_meadow",
+      "id": "biomeswevegone:twilight_meadow",
       "required": false
     },
     {
-      "id": "byg:weeping_witch_forest",
+      "id": "biomeswevegone:weeping_witch_forest",
       "required": false
     },
     {
-      "id": "byg:temperate_rainforest",
+      "id": "biomeswevegone:temperate_rainforest",
       "required": false
     },
     {
-      "id": "byg:zelkova_forest",
+      "id": "biomeswevegone:zelkova_forest",
       "required": false
     },
     {

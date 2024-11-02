@@ -1,18 +1,22 @@
 {
   "values": [
+    {
+      "id": "biomesoplenty:orchard",
+      "required": false
+    },
     "minecraft:flower_forest",
     "minecraft:forest",
     "minecraft:windswept_forest",
     {
-      "id": "byg:orchard",
+      "id": "biomeswevegone:orchard",
       "required": false
     },
     {
-      "id": "byg:aspen_forest",
+      "id": "biomeswevegone:aspen_forest",
       "required": false
     },
     {
-      "id": "byg:red_oak_forest",
+      "id": "biomeswevegone:red_oak_forest",
       "required": false
     },
     {
