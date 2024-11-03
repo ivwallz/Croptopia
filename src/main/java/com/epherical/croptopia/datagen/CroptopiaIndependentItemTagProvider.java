@@ -16,15 +16,18 @@ import com.epherical.croptopia.register.helpers.TreeCrop;
 import com.epherical.croptopia.register.helpers.Utensil;
 import com.epherical.croptopia.util.PluralInfo;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagEntry;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 
@@ -290,6 +293,10 @@ public class CroptopiaIndependentItemTagProvider extends ItemTagsProvider {
 
     private IntrinsicTagAppender<Item> createGeneralTag(String name, Item item) {
         TagKey<Item> pluralTag = register(name);
+        FoodProperties foodProperties = item.components().get(DataComponents.FOOD);
+        if (foodProperties != null) {
+            this.tag(Tags.Items.FOODS).add(item);
+        }
         return this.tag(pluralTag).add(item);
     }
 

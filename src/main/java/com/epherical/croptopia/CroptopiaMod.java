@@ -19,6 +19,7 @@ import com.epherical.croptopia.datagen.CroptopiaWorldBiomeSelection;
 import com.epherical.croptopia.datagen.CroptopiaWorldGeneration;
 import com.epherical.croptopia.items.GuideBookItem;
 import com.epherical.croptopia.items.SeedItem;
+import com.epherical.croptopia.listeners.BlockBreakEvent;
 import com.epherical.croptopia.register.Content;
 import com.epherical.croptopia.register.helpers.FarmlandCrop;
 import com.epherical.croptopia.register.helpers.TreeCrop;
@@ -133,6 +134,7 @@ public class CroptopiaMod {
 
         modEventBus.addListener(this::commonSetup);
         CREATIVE_MODE_TABS.register(modEventBus);
+        NeoForge.EVENT_BUS.register(new BlockBreakEvent());
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (Croptopia) to respond directly to events.

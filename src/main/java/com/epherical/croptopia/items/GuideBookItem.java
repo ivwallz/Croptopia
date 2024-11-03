@@ -1,5 +1,8 @@
 package com.epherical.croptopia.items;
 
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -9,6 +12,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.neoforged.fml.ModList;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
+import vazkii.patchouli.api.PatchouliAPI;
 
 public class GuideBookItem extends Item {
 
@@ -24,7 +29,7 @@ public class GuideBookItem extends Item {
 
         if (user instanceof ServerPlayer player && ModList.get().isLoaded("patchouli")) {
             //player.sendSystemMessage(Component.nullToEmpty("The code is disabled, whenever this build was published patchouli 1.20.2 did not exist."));
-            //PatchouliAPI.get().openBookGUI(player, ForgeRegistries.ITEMS.getKey(this));
+            PatchouliAPI.get().openBookGUI(player, BuiltInRegistries.ITEM.getKey(this));
         }
 
         return new InteractionResultHolder<>(InteractionResult.SUCCESS, stack);

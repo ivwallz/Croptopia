@@ -3,6 +3,7 @@ package com.epherical.croptopia.listeners;
 import com.epherical.croptopia.register.Content;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
@@ -18,7 +19,8 @@ public class BlockBreakEvent {
             BlockState state = event.getState();
             if (state.is(Content.CINNAMON.getLog()) || state.is(Content.CINNAMON.getWood())) {
                 if (player != null && !player.isCreative()) {
-                    Block.popResource(player.level(), event.getPos(), new ItemStack(Content.CINNAMON));
+                    Block.popResourceFromFace(player.level(), event.getPos(),
+                            event.getContext().getHorizontalDirection().getOpposite(), new ItemStack(Content.CINNAMON));
                 }
                 if (state.is((Content.CINNAMON.getLog()))) {
                     event.setFinalState(Content.CINNAMON.getStrippedLog().withPropertiesOf(state));

@@ -87,7 +87,10 @@ public class CroptopiaLootTableProvider extends BlockLootSubProvider {
             this.add(treeCrop.asBlock(),
                     this.applyExplosionDecay(treeCrop.asBlock(),
                             LootTable.lootTable()
-                                    .withPool(LootPool.lootPool().add(LootItem.lootTableItem(treeCrop.asItem()).when(ageCondition)))));
+                                    .withPool(LootPool.lootPool().add(LootItem.lootTableItem(treeCrop.asItem()).when(ageCondition)))
+                                    .withPool(LootPool.lootPool()
+                                            .add(LootItem.lootTableItem(treeCrop.getSaplingItem()).setWeight(5))
+                                            .add(EmptyLootItem.emptyItem().setWeight(95)))));
             this.dropSelf(treeCrop.getSaplingBlock());
         }
         for (Tree tree : Tree.copy()) {

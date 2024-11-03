@@ -11,10 +11,13 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    maven {
+        url = 'https://maven.blamejared.com'
+    }
 }
 
 base {
-    archivesName = mod_id
+    archivesName = mod_id + "_" + minecraft_version + "_NEO-FORGE"
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
@@ -98,7 +101,8 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 dependencies {
 
-    implementation ('com.epherical.epherolib:EpheroLib-forge:1.2.0-1.21')
+    implementation ('com.epherical.epherolib:EpheroLib-forge:1.2.0-1.21.1')
+    implementation ("vazkii.patchouli:Patchouli:1.21-87-NEOFORGE")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
