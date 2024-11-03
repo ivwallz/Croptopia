@@ -227,7 +227,9 @@ public class CroptopiaMod {
 
             LootTableProvider.SubProviderEntry blocks = new LootTableProvider.SubProviderEntry(CroptopiaLootTableProvider::new, LootContextParamSets.BLOCK);
             LootTableProvider.SubProviderEntry chests = new LootTableProvider.SubProviderEntry(CroptopiaLootTableProvider.ChestLoot::new, LootContextParamSets.CHEST);
-            LootTableProvider lootProvider = new LootTableProvider(output, Collections.emptySet(), List.of(blocks, chests), lookupProvider);
+            LootTableProvider.SubProviderEntry entity = new LootTableProvider.SubProviderEntry(CroptopiaLootTableProvider.EntityLoot::new, LootContextParamSets.ENTITY);
+            LootTableProvider.SubProviderEntry fishing = new LootTableProvider.SubProviderEntry(CroptopiaLootTableProvider.FishingLoot::new, LootContextParamSets.FISHING);
+            LootTableProvider lootProvider = new LootTableProvider(output, Collections.emptySet(), List.of(blocks, chests, entity, fishing), lookupProvider);
 
             generator.addProvider(event.includeServer(), lootProvider);
 

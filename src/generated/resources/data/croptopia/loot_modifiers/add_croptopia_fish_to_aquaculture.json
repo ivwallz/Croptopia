@@ -3,8 +3,8 @@
   "conditions": [
     {
       "condition": "neoforge:loot_table_id",
-      "loot_table_id": "minecraft:chests/simple_dungeon"
+      "loot_table_id": "aquaculture:gameplay/fishing/fish"
     }
   ],
-  "table": "croptopia:chests/tuna_sandwich_loot"
+  "table": "croptopia:gameplay/fishing"
 }

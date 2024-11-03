@@ -11,11 +11,13 @@ import java.util.Random;
 public class ReferenceItem extends Item {
 
     private final Component[] component;
+    private int index = 0;
 
     private final Random random = new Random();
     public ReferenceItem(Properties properties, Component... component) {
         super(properties);
         this.component = component;
+        this.index = random.nextInt(component.length);
     }
 
 
@@ -23,7 +25,6 @@ public class ReferenceItem extends Item {
     @Override
     public void appendHoverText(ItemStack item, TooltipContext level, List<Component> tooltip, TooltipFlag flag) {
         super.appendHoverText(item, level, tooltip, flag);
-        int randomIndex = random.nextInt(component.length);
-        tooltip.add(component[randomIndex]);
+        tooltip.add(component[index]);
     }
 }
