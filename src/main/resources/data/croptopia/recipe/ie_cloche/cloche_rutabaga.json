@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:rutabaga",
-      "count": 2
+      "id": "croptopia:rutabaga",
+      "Count": 2
     },
     {
-      "item": "croptopia:rutabaga_seed"
+      "id": "croptopia:rutabaga_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:rutabaga_crop"
   },
   "neoforge:conditions": [

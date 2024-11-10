@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:mustard",
-      "count": 2
+      "id": "croptopia:mustard",
+      "Count": 2
     },
     {
-      "item": "croptopia:mustard_seed"
+      "id": "croptopia:mustard_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:mustard_crop"
   },
   "neoforge:conditions": [

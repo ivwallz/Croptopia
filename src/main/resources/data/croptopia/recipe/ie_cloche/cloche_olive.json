@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:olive",
-      "count": 2
+      "id": "croptopia:olive",
+      "Count": 2
     },
     {
-      "item": "croptopia:olive_seed"
+      "id": "croptopia:olive_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:olive_crop"
   },
   "neoforge:conditions": [

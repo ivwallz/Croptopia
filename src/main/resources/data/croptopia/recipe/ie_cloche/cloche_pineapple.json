@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:pineapple",
-      "count": 2
+      "id": "croptopia:pineapple",
+      "Count": 2
     },
     {
-      "item": "croptopia:pineapple_seed"
+      "id": "croptopia:pineapple_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:pineapple_crop"
   },
   "neoforge:conditions": [

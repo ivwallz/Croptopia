@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:blackberry",
-      "count": 2
+      "id": "croptopia:blackberry",
+      "Count": 2
     },
     {
-      "item": "croptopia:blackberry_seed"
+      "id": "croptopia:blackberry_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:blackberry_crop"
   },
   "neoforge:conditions": [

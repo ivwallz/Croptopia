@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:coffee_beans",
-      "count": 2
+      "id": "croptopia:coffee_beans",
+      "Count": 2
     },
     {
-      "item": "croptopia:coffee_seed"
+      "id": "croptopia:coffee_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:coffee_crop"
   },
   "neoforge:conditions": [

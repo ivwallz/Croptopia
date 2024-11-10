@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:saguaro",
-      "count": 2
+      "id": "croptopia:saguaro",
+      "Count": 2
     },
     {
-      "item": "croptopia:saguaro_seed"
+      "id": "croptopia:saguaro_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:saguaro_crop"
   },
   "neoforge:conditions": [

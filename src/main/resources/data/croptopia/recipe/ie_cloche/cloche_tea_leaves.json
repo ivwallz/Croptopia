@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:tea_leaves",
-      "count": 2
+      "id": "croptopia:tea_leaves",
+      "Count": 2
     },
     {
-      "item": "croptopia:tea_seed"
+      "id": "croptopia:tea_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:tea_crop"
   },
   "neoforge:conditions": [

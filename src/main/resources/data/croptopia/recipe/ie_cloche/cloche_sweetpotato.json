@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:sweetpotato",
-      "count": 2
+      "id": "croptopia:sweetpotato",
+      "Count": 2
     },
     {
-      "item": "croptopia:sweetpotato_seed"
+      "id": "croptopia:sweetpotato_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:sweetpotato_crop"
   },
   "neoforge:conditions": [

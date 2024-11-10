@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:tomato",
-      "count": 2
+      "id": "croptopia:tomato",
+      "Count": 2
     },
     {
-      "item": "croptopia:tomato_seed"
+      "id": "croptopia:tomato_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:tomato_crop"
   },
   "neoforge:conditions": [

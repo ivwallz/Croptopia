@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:soybean",
-      "count": 2
+      "id": "croptopia:soybean",
+      "Count": 2
     },
     {
-      "item": "croptopia:soybean_seed"
+      "id": "croptopia:soybean_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:soybean_crop"
   },
   "neoforge:conditions": [

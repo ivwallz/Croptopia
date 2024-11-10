@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:greenonion",
-      "count": 2
+      "id": "croptopia:greenonion",
+      "Count": 2
     },
     {
-      "item": "croptopia:greenonion_seed"
+      "id": "croptopia:greenonion_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:greenonion_crop"
   },
   "neoforge:conditions": [

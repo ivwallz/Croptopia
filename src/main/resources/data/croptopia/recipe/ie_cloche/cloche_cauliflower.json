@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:cauliflower",
-      "count": 2
+      "id": "croptopia:cauliflower",
+      "Count": 2
     },
     {
-      "item": "croptopia:cauliflower_seed"
+      "id": "croptopia:cauliflower_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:cauliflower_crop"
   },
   "neoforge:conditions": [

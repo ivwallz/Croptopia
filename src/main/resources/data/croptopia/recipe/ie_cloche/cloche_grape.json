@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:grape",
-      "count": 2
+      "id": "croptopia:grape",
+      "Count": 2
     },
     {
-      "item": "croptopia:grape_seed"
+      "id": "croptopia:grape_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:grape_crop"
   },
   "neoforge:conditions": [

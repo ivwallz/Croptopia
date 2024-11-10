@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:yam",
-      "count": 2
+      "id": "croptopia:yam",
+      "Count": 2
     },
     {
-      "item": "croptopia:yam_seed"
+      "id": "croptopia:yam_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:yam_crop"
   },
   "neoforge:conditions": [

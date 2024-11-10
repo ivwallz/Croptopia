@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:corn",
-      "count": 2
+      "id": "croptopia:corn",
+      "Count": 2
     },
     {
-      "item": "croptopia:corn_seed"
+      "id": "croptopia:corn_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:corn_crop"
   },
   "neoforge:conditions": [

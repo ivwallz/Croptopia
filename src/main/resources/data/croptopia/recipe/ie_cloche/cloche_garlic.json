@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:garlic",
-      "count": 2
+      "id": "croptopia:garlic",
+      "Count": 2
     },
     {
-      "item": "croptopia:garlic_seed"
+      "id": "croptopia:garlic_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:garlic_crop"
   },
   "neoforge:conditions": [

@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:squash",
-      "count": 2
+      "id": "croptopia:squash",
+      "Count": 2
     },
     {
-      "item": "croptopia:squash_seed"
+      "id": "croptopia:squash_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:squash_crop"
   },
   "neoforge:conditions": [

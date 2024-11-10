@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:peanut",
-      "count": 2
+      "id": "croptopia:peanut",
+      "Count": 2
     },
     {
-      "item": "croptopia:peanut_seed"
+      "id": "croptopia:peanut_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:peanut_crop"
   },
   "neoforge:conditions": [

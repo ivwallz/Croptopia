@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:elderberry",
-      "count": 2
+      "id": "croptopia:elderberry",
+      "Count": 2
     },
     {
-      "item": "croptopia:elderberry_seed"
+      "id": "croptopia:elderberry_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:elderberry_crop"
   },
   "neoforge:conditions": [

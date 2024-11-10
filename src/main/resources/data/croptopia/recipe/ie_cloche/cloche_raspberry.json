@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:raspberry",
-      "count": 2
+      "id": "croptopia:raspberry",
+      "Count": 2
     },
     {
-      "item": "croptopia:raspberry_seed"
+      "id": "croptopia:raspberry_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:raspberry_crop"
   },
   "neoforge:conditions": [

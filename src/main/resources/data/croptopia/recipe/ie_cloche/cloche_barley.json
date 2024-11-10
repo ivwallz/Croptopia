@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:barley",
-      "count": 2
+      "id": "croptopia:barley",
+      "Count": 2
     },
     {
-      "item": "croptopia:barley_seed"
+      "id": "croptopia:barley_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:barley_crop"
   },
   "neoforge:conditions": [

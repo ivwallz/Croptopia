@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:turmeric",
-      "count": 2
+      "id": "croptopia:turmeric",
+      "Count": 2
     },
     {
-      "item": "croptopia:turmeric_seed"
+      "id": "croptopia:turmeric_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:turmeric_crop"
   },
   "neoforge:conditions": [

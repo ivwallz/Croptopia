@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:leek",
-      "count": 2
+      "id": "croptopia:leek",
+      "Count": 2
     },
     {
-      "item": "croptopia:leek_seed"
+      "id": "croptopia:leek_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:leek_crop"
   },
   "neoforge:conditions": [

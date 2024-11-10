@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:radish",
-      "count": 2
+      "id": "croptopia:radish",
+      "Count": 2
     },
     {
-      "item": "croptopia:radish_seed"
+      "id": "croptopia:radish_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:radish_crop"
   },
   "neoforge:conditions": [

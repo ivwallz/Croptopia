@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:artichoke",
-      "count": 2
+      "id": "croptopia:artichoke",
+      "Count": 2
     },
     {
-      "item": "croptopia:artichoke_seed"
+      "id": "croptopia:artichoke_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:artichoke_crop"
   },
   "neoforge:conditions": [

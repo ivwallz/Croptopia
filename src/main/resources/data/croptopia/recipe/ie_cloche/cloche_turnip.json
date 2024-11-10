@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:turnip",
-      "count": 2
+      "id": "croptopia:turnip",
+      "Count": 2
     },
     {
-      "item": "croptopia:turnip_seed"
+      "id": "croptopia:turnip_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:turnip_crop"
   },
   "neoforge:conditions": [

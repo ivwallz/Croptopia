@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:kale",
-      "count": 2
+      "id": "croptopia:kale",
+      "Count": 2
     },
     {
-      "item": "croptopia:kale_seed"
+      "id": "croptopia:kale_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:kale_crop"
   },
   "neoforge:conditions": [

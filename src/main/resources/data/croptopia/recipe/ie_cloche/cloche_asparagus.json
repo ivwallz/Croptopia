@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:asparagus",
-      "count": 2
+      "id": "croptopia:asparagus",
+      "Count": 2
     },
     {
-      "item": "croptopia:asparagus_seed"
+      "id": "croptopia:asparagus_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:asparagus_crop"
   },
   "neoforge:conditions": [

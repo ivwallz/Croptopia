@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:blueberry",
-      "count": 2
+      "id": "croptopia:blueberry",
+      "Count": 2
     },
     {
-      "item": "croptopia:blueberry_seed"
+      "id": "croptopia:blueberry_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:blueberry_crop"
   },
   "neoforge:conditions": [

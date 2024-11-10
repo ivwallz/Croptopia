@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:chile_pepper",
-      "count": 2
+      "id": "croptopia:chile_pepper",
+      "Count": 2
     },
     {
-      "item": "croptopia:chile_pepper_seed"
+      "id": "croptopia:chile_pepper_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:chile_pepper_crop"
   },
   "neoforge:conditions": [

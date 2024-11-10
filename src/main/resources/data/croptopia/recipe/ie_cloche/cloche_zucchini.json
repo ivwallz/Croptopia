@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:zucchini",
-      "count": 2
+      "id": "croptopia:zucchini",
+      "Count": 2
     },
     {
-      "item": "croptopia:zucchini_seed"
+      "id": "croptopia:zucchini_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:zucchini_crop"
   },
   "neoforge:conditions": [

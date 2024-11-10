@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:basil",
-      "count": 2
+      "id": "croptopia:basil",
+      "Count": 2
     },
     {
-      "item": "croptopia:basil_seed"
+      "id": "croptopia:basil_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:basil_crop"
   },
   "neoforge:conditions": [

@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:eggplant",
-      "count": 2
+      "id": "croptopia:eggplant",
+      "Count": 2
     },
     {
-      "item": "croptopia:eggplant_seed"
+      "id": "croptopia:eggplant_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:eggplant_crop"
   },
   "neoforge:conditions": [

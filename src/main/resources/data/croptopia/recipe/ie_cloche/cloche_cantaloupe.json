@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:cantaloupe",
-      "count": 2
+      "id": "croptopia:cantaloupe",
+      "Count": 2
     },
     {
-      "item": "croptopia:cantaloupe_seed"
+      "id": "croptopia:cantaloupe_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:cantaloupe_crop"
   },
   "neoforge:conditions": [

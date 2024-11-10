@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:honeydew",
-      "count": 2
+      "id": "croptopia:honeydew",
+      "Count": 2
     },
     {
-      "item": "croptopia:honeydew_seed"
+      "id": "croptopia:honeydew_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:honeydew_crop"
   },
   "neoforge:conditions": [

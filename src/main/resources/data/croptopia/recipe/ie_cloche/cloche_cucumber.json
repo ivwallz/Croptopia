@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:cucumber",
-      "count": 2
+      "id": "croptopia:cucumber",
+      "Count": 2
     },
     {
-      "item": "croptopia:cucumber_seed"
+      "id": "croptopia:cucumber_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:cucumber_crop"
   },
   "neoforge:conditions": [

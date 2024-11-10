@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:rice",
-      "count": 2
+      "id": "croptopia:rice",
+      "Count": 2
     },
     {
-      "item": "croptopia:rice_seed"
+      "id": "croptopia:rice_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:rice_crop"
   },
   "neoforge:conditions": [

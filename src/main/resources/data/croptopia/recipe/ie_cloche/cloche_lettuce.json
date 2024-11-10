@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:lettuce",
-      "count": 2
+      "id": "croptopia:lettuce",
+      "Count": 2
     },
     {
-      "item": "croptopia:lettuce_seed"
+      "id": "croptopia:lettuce_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:lettuce_crop"
   },
   "neoforge:conditions": [

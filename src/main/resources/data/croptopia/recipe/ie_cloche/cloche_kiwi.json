@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:kiwi",
-      "count": 2
+      "id": "croptopia:kiwi",
+      "Count": 2
     },
     {
-      "item": "croptopia:kiwi_seed"
+      "id": "croptopia:kiwi_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:kiwi_crop"
   },
   "neoforge:conditions": [

@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:spinach",
-      "count": 2
+      "id": "croptopia:spinach",
+      "Count": 2
     },
     {
-      "item": "croptopia:spinach_seed"
+      "id": "croptopia:spinach_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:spinach_crop"
   },
   "neoforge:conditions": [

@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:cabbage",
-      "count": 2
+      "id": "croptopia:cabbage",
+      "Count": 2
     },
     {
-      "item": "croptopia:cabbage_seed"
+      "id": "croptopia:cabbage_seed"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:cabbage_crop"
   },
   "neoforge:conditions": [

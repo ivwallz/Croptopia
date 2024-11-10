@@ -8,16 +8,16 @@
   },
   "results": [
     {
-      "item": "croptopia:vanilla",
-      "count": 2
+      "id": "croptopia:vanilla",
+      "Count": 2
     },
     {
-      "item": "croptopia:vanilla_seeds"
+      "id": "croptopia:vanilla_seeds"
     }
   ],
   "time": 640,
   "render": {
-    "type": "crop",
+    "type": "immersiveengineering:crop",
     "block": "croptopia:vanilla_crop"
   },
   "neoforge:conditions": [
